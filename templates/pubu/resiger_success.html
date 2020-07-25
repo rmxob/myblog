@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>注册成功</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'pubu/css/resiger_all.css' %}">
+     <link rel="stylesheet" href="{% static 'pubu/css/swiper.min.css' %}">
+        <script type="text/javascript" src="{% static 'pubu/js/aoligei.js' %}"></script>
+    <script type="text/javascript" src="{% static 'pubu/js/swiper.min.js' %}"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+	 <section class="swiper-container hidden-xs" id="topSwiper" >
+        <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#"><img src="../../static/pubu/images/shu1%20(1).jpg"></a>
+                </div>
+               <div class="swiper-slide">
+                  <a href="#"><img src="../../static/pubu/images/shu1%20(2).jpg"></a>
+                </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+<section class="left_all">{#     右边部分#}
+    <div class="section_right">
+           {#    右上#}
+        <div class="right_header">
+          <ul>
+              <li><a href="/" class="font1">回到主页</a></li>
+              <li>&nbsp;&nbsp;</li>
+              <li><a href="#" class="font1">关于我</a></li>
+               <li>&nbsp;&nbsp;</li>
+              <li><a href="#" class="font1">意见反馈</a></li>
+          </ul>
+        </div>
+    </div>
+    <div class="right_footer">
+        <div class="right_footer_top">
+            <span style="font-size: 0.25rem">注册成功,欢迎登陆粑粑小屋</span>
+            <br>
+            <span style="position: relative;right: 0.01rem;font-size: 0.2rem">每一天，乐在学习</span>
+            <span></span>
+        </div>
+ {% block text_swiper %}
+
+{% endblock %}
+        <div class="form1">
+            <form action="/login" method="get">
+          <div class="form-group">
+            <input type="text" class="form-control" id="exampleInputName2" name="username" placeholder="username">
+          </div>
+          <div class="form-group">
+            <input type="password"  name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-default" style=" color:#ffffff; font-size: 0.13rem">立即登陆</button>
+</form>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

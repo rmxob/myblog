@@ -1,0 +1,7 @@
+<uwsgi>
+    <socket>:8000</socket>
+    <chdir>/usr/local/bin/myblog</chdir>
+    <module>hello.wsgi</module>
+    <processes>4</processes> <!-- 进程数 -->
+    <daemonize>uwsgi.log</daemonize>
+</uwsgi>

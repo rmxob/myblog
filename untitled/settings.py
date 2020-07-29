@@ -25,9 +25,7 @@ SECRET_KEY = 'zd#=xb&l@*)^7%89m#@h8^&d7$ouypap3z@-66$o@z@u12y(9w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-Allow_host=['172.17.172.109','localhost',]
-
-
+ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
@@ -48,6 +46,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'untitled.urls'
@@ -128,4 +127,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR , 'static')
 ]
+STATIC_ROOT='/home/xob/myblog/static/pubu/'
 MEDIA_ROOT=os.path.join(BASE_DIR,r'static/mdeia')

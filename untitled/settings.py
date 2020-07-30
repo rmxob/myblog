@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myapp1',
+    'mdeditor',
+    'tinymce',
 ]
 
 MIDDLEWARE = [
@@ -128,4 +130,12 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR , 'static')
 ]
 STATIC_ROOT='/home/xob/myblog/static/pubu/'
-MEDIA_ROOT=os.path.join(BASE_DIR,r'static/mdeia')
+MEDIA_ROOT=os.path.join(BASE_DIR,'media')
+MEDIA_URL = '/media/'   #你上传的文件和图片会默认存在/uploads/editor下
+
+
+TINYMCE_DEFAULT_CONFIG={
+    'theme':'advanced',
+    'width':600,
+    'height':400,
+}

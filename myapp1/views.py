@@ -1,8 +1,14 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from .models import resiger,new_resiger
+from .models import resiger,new_resiger,MyBlog
+from django.contrib.auth.models import User
 def index(request):
-    return render(request,'pubu/index.html')
+    blog_all=MyBlog.objects.all()
+    blog_num=len(blog_all)
+    for i in blog_all:
+        blog=i.content
+        title=i.title
+    return render(request,'pubu/index.html',{'blog01':blog,'title01':title,'blog_all':blog_all})
 def resiger1(request):
     return render(request,'pubu/register.html')
 def login(request):
@@ -30,3 +36,11 @@ def save_uid(request):
     return  HttpResponse("用户名已存在") if is_exist else render(request,"pubu/resiger_success.html")
 def swiper(request):
     return render(request,'pubu/text swiper.html')
+
+
+def article(request):
+    article_num=request.get_full_path().split('/')[2]
+    blog_all=MyBlog.objects.all().filter(id=article_num)
+    for i in blog_all:
+        article_detiles=i.content
+    return render(request,'pubu/article.html',{'article':article_detiles})

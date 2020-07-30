@@ -7,4 +7,5 @@ urlpatterns = [
     re_path('^save$', views.save_uid),
     re_path('^text_swiper$', views.swiper),
      re_path('^login', views.login),
+    re_path('^article', views.article),
 ]

@@ -17,6 +17,7 @@
 		<header class="htmleaf-header">
 			<h1>xob's blog <span>orb,A boy who loves code and animation</span>
                 <span><a href="/resiger">注册</a></span>
+                <span><a href="/resiger">网站建设状态</a></span>
             </h1>
 			<div class="htmleaf-links">
 				<a class="htmleaf-icon icon-htmleaf-home-outline" href="./" title="jQuery之家" target="_blank"><span> jQuery之家</span></a>
@@ -34,115 +35,29 @@
 		          </li>
 		          <li>
 		            <a data-sjslink="flatty" class="nav__link">
-		              Flatty
+		              学习
 		            </a>
 		          </li>
 		          <li>
 		            <a data-sjslink="funny" class="nav__link">
-		              Funny
+		              生活
 		            </a>
 		          </li>
 		        </ul>
 		        <div id="sortable" class="sjs-default">
-		          <div data-sjsel="flatty">
+                    {%for i in blog_all%}
+		          <div data-sjsel={{ i.list }}>
 		            <div class="card">
-		              <img class="card__picture" src="{% static 'pubu/images/item-1.jpg' %}" alt="">
-		              <div class="card-infos">
-		                <h2 class="card__title">Example 1</h2>
+		              <img class="card__picture" src="http://pic.netbian.com/uploads/allimg/180712/213018-1531402218fa16.jpg" alt="">
+		              <div class="card-infos"><a href="/article/{{ i.id }}">
+                          <h2 class="card__title">{{i.title}}</h2>
 		                <p class="card__text">
-		                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, eius, asperiores. Incidunt sapiente est quae iure...
-		                </p>
+		                 {{i.content|slice:'50'}}
+		                </p></a>
 		              </div>
 		            </div>
 		          </div>
-		          <div data-sjsel="flatty">
-		            <div class="card">
-		              <img class="card__picture" src="{% static 'pubu/images/item-2.jpg' %}" alt="">
-		              <div class="card-infos">
-		                <h2 class="card__title">Example 2</h2>
-		                <p class="card__text">
-		                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vitae necessitatibus, dolorem similique vero explicabo...
-		                </p>
-		              </div>
-		            </div>
-		          </div>
-		          <div data-sjsel="funny">
-		            <div class="card">
-		              <img class="card__picture" src="{% static 'pubu/images/item-3.jpg' %}" alt="">
-		              <div class="card-infos">
-		                <h2 class="card__title">Example 3</h2>
-		                <p class="card__text">
-		                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, placeat voluptate, fuga tenetur eos ducimus animi porro...
-		                </p>
-		              </div>
-		            </div>
-		          </div>
-		          <div data-sjsel="flatty">
-		            <div class="card">
-		              <img class="card__picture" src="{% static 'pubu/images/item-4.jpg' %}" alt="">
-		              <div class="card-infos">
-		                <h2 class="card__title">Example 4</h2>
-		                <p class="card__text">
-		                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit doloremque quisquam, obcaecati unde nam est quos...
-		                </p>
-		              </div>
-		            </div>
-		          </div>
-		          <div data-sjsel="flatty">
-		            <div class="card">
-		              <img class="card__picture" src="{% static 'pubu/images/item-5.jpg' %}" alt="">
-		              <div class="card-infos">
-		                <h2 class="card__title">Example 5</h2>
-		                <p class="card__text">
-		                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse corporis hic minima nisi reprehenderit...
-		                </p>
-		              </div>
-		            </div>
-		          </div>
-		          <div data-sjsel="funny">
-		            <div class="card">
-		              <img class="card__picture" src="{% static 'pubu/images/item-6.jpg' %}" alt="">
-		              <div class="card-infos">
-		                <h2 class="card__title">Example 6</h2>
-		                <p class="card__text">
-		                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptatibus, id, deserunt inventore...
-		                </p>
-		              </div>
-		            </div>
-		          </div>
-		          <div data-sjsel="flatty">
-		            <div class="card">
-		              <img class="card__picture" src="{% static 'pubu/images/item-7.jpg' %}" alt="">
-		              <div class="card-infos">
-		                <h2 class="card__title">Example 7</h2>
-		                <p class="card__text">
-		                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum enim beatae vero culpa, fuga, magni sunt dolores nam...
-		                </p>
-		              </div>
-		            </div>
-		          </div>
-		          <div data-sjsel="flatty">
-		            <div class="card">
-		              <img class="card__picture" src="{% static 'pubu/images/item-8.jpg' %}" alt="">
-		              <div class="card-infos">
-		                <h2 class="card__title">Example 8</h2>
-		                <p class="card__text">
-		                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam, blanditiis necessitatibus...
-		                </p>
-		              </div>
-		            </div>
-		          </div>
-		          <div data-sjsel="funny">
-		            <div class="card">
-		              <img class="card__picture" src="{% static 'pubu/images/item-9.jpg' %}" alt="">
-		              <div class="card-infos">
-		                <h2 class="card__title">Example 9</h2>
-		                <p class="card__text">
-		                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur adipisci voluptatum laborum officiis...
-		                </p>
-		              </div>
-		            </div>
-		          </div>
+                    {% endfor %}
 		        </div>
 		      </div>
 		    </div>

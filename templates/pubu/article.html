@@ -1,10 +1,51 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+	<title>文章详情界面</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'pubu/css/resiger_all.css' %}">
+     <link rel="stylesheet" type="text/css" href="{% static 'pubu/css/code.css' %}">
+     <link rel="stylesheet" href="{% static 'pubu/css/swiper.min.css' %}">
+        <script type="text/javascript" src="{% static 'pubu/js/aoligei.js' %}"></script>
+    <script type="text/javascript" src="{% static 'pubu/js/swiper.min.js' %}"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-{{article}}
+	 <section class="swiper-container hidden-xs" id="topSwiper" >
+        <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#"><img src="../../static/pubu/images/shu1%20(1).jpg"></a>
+                </div>
+               <div class="swiper-slide">
+                  <a href="#"><img src="../../static/pubu/images/shu1%20(2).jpg"></a>
+                </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+<section class="left_all">{#     右边部分#}
+    <div class="section_right">
+           {#    右上#}
+        <div class="right_header">
+          <ul>
+              <li><a href="/" class="font1">回到主页</a></li>
+              <li>&nbsp;&nbsp;</li>
+              <li><a href="#" class="font1">关于我</a></li>
+               <li>&nbsp;&nbsp;</li>
+              <li><a href="#" class="font1">意见反馈</a></li>
+          </ul>
+        </div>
+    </div>
+    <div class="article_title">
+        <h1>{{ title }}</h1>
+    </div>
+    <div class="article_right_footer">
+
+      {{ article|safe }}
+    </div>
+</section>
+
 </body>
 </html>

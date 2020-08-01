@@ -11,7 +11,9 @@
   <link href="https://fonts.googleapis.com/css?family=Hind:400,600|Open+Sans:300,600" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'pubu/dist/sortable.min.css' %}">
   <script type="text/javascript" src="{% static 'pubu/dist/sortable.js' %}"></script>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 </head>
+
 <body>
 	<div class="htmleaf-container">
 		<header class="htmleaf-header">
@@ -46,9 +48,9 @@
 		        </ul>
 		        <div id="sortable" class="sjs-default">
                     {%for i in blog_all%}
-		          <div data-sjsel={{ i.list }}>
+		          <div data-sjsel=funny>
 		            <div class="card">
-		              <img class="card__picture" src="http://pic.netbian.com/uploads/allimg/180712/213018-1531402218fa16.jpg" alt="">
+		              <img class="card__picture" src={{ i.img }} alt="">
 		              <div class="card-infos"><a href="/article/{{ i.id }}">
                           <h2 class="card__title">{{i.title}}</h2>
 		                <p class="card__text">

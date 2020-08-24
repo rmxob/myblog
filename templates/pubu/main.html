@@ -1,0 +1,31 @@
+{% extends 'pubu/mainmodle.html' %}
+{% load static %}
+{% block main %}
+      <link rel="stylesheet" href="{% static 'time/css/modelmain.css' %}">
+<div class="main">
+    {% for i in  blog_list  %}
+   <div class="article">
+        <div class="main_time">
+            <span class="month">{{ i.time.month }}月</span>
+            <span class="day">{{ i.time.day}}</span>
+        </div>
+       <div class="main_label">
+        <a>{{ i.column }}</a>
+        </div>
+       <div class="main_title">
+          {{ i.title }}
+       </div>
+       <div class="main_authorinfo">
+           <img src="/static/time/img/作者.png">xob &nbsp;
+           <img src="/static/time/img/日期.png"> &nbsp;{{ i.time|date:"Y-m-d" }}
+       </div>
+       <div class="main_content">
+          {{ i.content |safe |slice:'345'}}
+       </div>
+        <a class="readall" href="/article/{{ i.id }}">
+            阅读全文>>
+        </a>
+   </div>
+    {% endfor%}
+</div>
+{% endblock %}

@@ -16,6 +16,15 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+SUIT_CONFIG = {
+    'ADMIN_NAME': '苹果树',
+    'MENU': ({'label': '用户',
+              'app': '用户',
+              'models': ('UserProfile',)},
+             ),
+    # 每一个字典表示左侧菜单的一栏
+    # label表示name，app表示上边的install的app，models表示用了哪些models
+}
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -23,7 +32,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'zd#=xb&l@*)^7%89m#@h8^&d7$ouypap3z@-66$o@z@u12y(9w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG =True
 
 ALLOWED_HOSTS = ["*"]
 # Application definition
@@ -37,7 +46,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myapp1',
     'mdeditor',
-    'tinymce',
 ]
 
 MIDDLEWARE = [
@@ -139,3 +147,15 @@ TINYMCE_DEFAULT_CONFIG={
     'width':600,
     'height':400,
 }
+LANGUAGE_CODE = 'zh-Hans'
+
+TIME_ZONE = 'Asia/Shanghai'
+
+USE_I18N = True
+
+USE_L10N = True
+
+USE_TZ = False  #设置为上海时间时关掉
+
+DATETIME_FORMAT = 'Y-m-d H:i:s'
+DATE_FORMAT = 'Y-m-d'

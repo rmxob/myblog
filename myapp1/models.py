@@ -28,7 +28,6 @@ from mdeditor.fields import MDTextField
 
 class MyBlog(models.Model):
     title = models.CharField(u'标题',max_length=30)
-    img=models.CharField(u'图片',max_length=100)
     time=models.DateField(auto_now=True)
     total_views = models.PositiveIntegerField(default=0)
     column = models.ForeignKey(

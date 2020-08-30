@@ -131,7 +131,7 @@ img{
     left: 30%;
     bottom:4em;
     border-radius:50%;
-    background:url('../img/leimu2.jpg');
+    background:url('../img/leimu2.jpg') no-repeat;
     background-size:contain;
     transition-duration:0.5s;
 }

@@ -91,18 +91,18 @@ def main(request):
         'markdown.extensions.codehilite',  # 语法高亮拓展
         'markdown.extensions.toc'  # 自动生成目录
     ]) # 修改blog.content内容为html
-
     return render(request,'pubu/main.html',{'blog_list':blog_all})
 
 from django.core.paginator import Paginator
 def main_all(request):
     blog_all = MyBlog.objects.all()
     for i in range(len(blog_all)):
-        blog_all[i].content=markdown.markdown( blog_all[i].content, extensions=[
-        'markdown.extensions.extra',
-        'markdown.extensions.codehilite',
-        'markdown.extensions.toc'
-    ]) # 修改blog.content内容为html
+            blog_all[i].content=markdown.markdown( blog_all[i].content[0:260], extensions=[
+            'markdown.extensions.extra',
+            'markdown.extensions.codehilite',
+            'markdown.extensions.toc'
+             ])
+    blog_all=blog_all[::-1]
     return render(request, 'pubu/main.html', {'blog_list': blog_all})
 
 

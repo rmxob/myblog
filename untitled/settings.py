@@ -16,15 +16,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-SUIT_CONFIG = {
-    'ADMIN_NAME': '苹果树',
-    'MENU': ({'label': '用户',
-              'app': '用户',
-              'models': ('UserProfile',)},
-             ),
-    # 每一个字典表示左侧菜单的一栏
-    # label表示name，app表示上边的install的app，models表示用了哪些models
-}
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 

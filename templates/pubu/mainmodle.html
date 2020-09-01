@@ -37,6 +37,10 @@
 });
 
     </script>
+
+    <link rel="shortcut icon" href="{% static 'time/img/mainico2.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'time/img/mainico2.ico' %}" type="image/x-icon">
+
 </head>
 
 <body>
@@ -52,8 +56,7 @@
     <div class="aboutme">
         <div class="bg_img">
         </div>
-       <a href="/time" title="rmxob"> <div class="head_img">
-        </div> </a>
+       <a href="/time" title="rmxob"> <div class="head_img"><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1953527241,3021876066&fm=26&gp=0.jpg"></div> </a>
         <div class="my_saying">
             <span style="font-size: 2em">rmxob</span>
             <br><br>
@@ -61,7 +64,7 @@
             <br>
         </div>
         <div class="icos">
-                <a class="home_ico" href="/all" target="_blank" title="bili"><img class="github" src="{% static 'time/img/主页.png' %}"></a>
+                <a class="home_ico" href="/all" target="_blank" title="主页"><img class="github" src="{% static 'time/img/主页.png' %}"></a>
 				<a class="github_ico " href="http://www.github.com/" target="_blank" title="github"><img class="github" src="{% static 'time/img/github.png' %}"></a>
                 <a class="bilibili_ico " href="https://space.bilibili.com/353231593" target="_blank" title="bili"><img class="github" src="{% static 'time/img/bilibili-fill.png' %}"></a>
         </div>
@@ -78,7 +81,7 @@
                       <img src="{% static 'time/img/django.png' %}"><a href="/main/2">Django</a>
                 </div>
               <div class="sort_img1">
-                   <img src="{% static 'time/img/生活.png' %}" ><a href="/main/2">生活随笔</a>
+                   <img src="{% static 'time/img/生活.png' %}" ><a href="/main/3">生活随笔</a>
               </div>
                  <div class="sort_img1">
                    <img src="{% static 'time/img/个人信息.png' %}" ><a href="/main/4">个人信息</a>
@@ -90,8 +93,11 @@
                    <img src="{% static 'time/img/前端开发.png' %}" ><a href="/main/5">前端开发</a>
               </div>
                      <div class="sort_img1">
-                   <img src="{% static 'time/img/bilibili.png' %}" ><a>我的追番</a>
+                   <img src="{% static 'time/img/bilibili.png' %}" ><a href="https://space.bilibili.com/353231593/bangumi">我的追番</a>
               </div>
+                <div class="sort_img1">
+                    <img src="{% static 'time/img/信息爬取.png' %}" ><a href="/main/7">爬虫基础</a>
+                </div>
             </div>
         </div>
     </div>

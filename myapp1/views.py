@@ -86,7 +86,7 @@ def main(request):
     cloum_num=request.get_full_path().split('/')[2]
     blog_all = MyBlog.objects.all().filter(column_id=cloum_num)
     for i in range(len(blog_all)):
-        blog_all[i].content=markdown.markdown(blog_all[i].content.content[0:260], extensions=[
+        blog_all[i].content=markdown.markdown(blog_all[i].content[0:260], extensions=[
         'markdown.extensions.extra',
         'markdown.extensions.codehilite',  # 语法高亮拓展
         'markdown.extensions.toc'  # 自动生成目录

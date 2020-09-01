@@ -18,7 +18,8 @@ li{
 }
 .sort_ul{
     float: left;
-
+    padding-left: 10% ;
+    padding-bottom: 15%;
 }
 .main_title{
     height: 10%;

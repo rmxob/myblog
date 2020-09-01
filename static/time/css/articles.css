@@ -108,10 +108,7 @@ img{
     width: 100%;
     height: 25%;
     border: 1px solid white;
-    background:url('http://pic.netbian.com/uploads/allimg/190917/183634-1568716594f366.jpg') no-repeat center center fixed;
-	-webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
+    background:url('http://pic.netbian.com/uploads/allimg/191011/230700-157080642023a4.jpg') no-repeat center center ;
    background-size: cover;
 
 }
@@ -124,17 +121,23 @@ img{
     background-color: white;
 }
 .aboutme .head_img{
+    max-height: 100%;
+    max-width: 100%;
     width: 35%;
     height: 20%;
-    border: 1px solid hsla(0,0%,100%,.4);;
     position: relative;
     left: 30%;
     bottom:4em;
-    border-radius:50%;
-    background:url('../img/leimu2.jpg') no-repeat;
     background-size:contain;
     transition-duration:0.5s;
-}
+    display:flex;
+	align-items:center;
+	justify-content:center;
+
+}.aboutme .head_img img{
+     border: 1px solid hsla(0,0%,100%,.4);
+     border-radius:50%;
+ }
 .aboutme .head_img:hover {
    -webkit-transform: scale(1.2); /*Safari 和 Chrome*/
    -moz-transform: scale(1.2); /*Firefox*/
@@ -183,7 +186,6 @@ img{
 
 }
 .sort{
-    height:20em;
     width:18%;
     position: relative;
     /*border: 1px solid blue;*/

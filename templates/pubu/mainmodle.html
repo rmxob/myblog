@@ -3,14 +3,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<meta name="description" content="python博文,技术博客,开发语言,代码">
+<meta name="Keywords" content="python,c#,c语言,博客,代码">
+    {% if  title %}
     <title>{{ title }}</title>
+    {% endif %}
+    {% if not title %}
+        <title>Orb 银河之光 召唤着我</title>
+    {% endif %}
     <link rel="stylesheet" type="text/css" href="{% static 'time/css/articles.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'pubu/css/code.css' %}">
-     <link rel="stylesheet" type="text/css" href="{% static 'pubu/css/codestyle.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'pubu/css/codestyle.css' %}">
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
-
-       <script>
+    <script>
    $(function(){
     $(window).scroll(function(){  //只要窗口滚动,就触发下面代码
 
@@ -45,6 +51,12 @@
 
 <body>
 <section class="header" name="gotop">
+    <div class="search">
+        <form class="form-search">
+            <input type="text"  class="search-input" placeholder="请输入搜索内容">
+            <button type="submit" class="search-btn"><img src="{% static 'time/img/搜索.png' %}"></button>
+        </form>
+    </div>
 <div class="header_login">
 <img src="//static.hdslb.com/images/akari.jpg">
     <span><a href="/nowlogin">登录</a></span>

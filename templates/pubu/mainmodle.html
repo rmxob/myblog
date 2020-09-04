@@ -3,6 +3,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<meta name="baidu-site-verification" content="RqAG0FaTsk" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
 <meta name="description" content="python博文,技术博客,开发语言,代码">
 <meta name="Keywords" content="python,c#,c语言,博客,代码">
     {% if  title %}
@@ -16,13 +19,11 @@
     <link rel="stylesheet" type="text/css" href="{% static 'pubu/css/code.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'pubu/css/codestyle.css' %}">
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
     <script>
    $(function(){
     $(window).scroll(function(){  //只要窗口滚动,就触发下面代码
-
         var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
-
 
         if( scrollt >500 ){  //判断滚动后高度超过200px,就显示
 
@@ -30,9 +31,7 @@
 
         }else{
             $(".toTop").stop().fadeOut(400); //如果返回或者没有超过,就淡出.必须加上stop()停止之前动画,否则会出现闪动
-
         }
-
     });
 
     $(".toTop").click(function(){ //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
@@ -41,7 +40,6 @@
     });
 });
     </script>
-
     <link rel="shortcut icon" href="{% static 'time/img/mainico2.ico' %}" type="image/x-icon">
     <link rel="icon" href="{% static 'time/img/mainico2.ico' %}" type="image/x-icon">
 

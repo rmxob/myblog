@@ -1,0 +1,29 @@
+{% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+   <link rel="stylesheet" type="text/css" href="{% static 'time/css/moblecodestyle.css' %}">
+       <link rel="stylesheet" type="text/css" href="{% static 'time/css/moblemain.css' %}">
+    <title>Title</title>
+</head>
+<body>
+    <div class="all">
+    {% for i in blog_all %}
+    <div class="article_title">
+        <h1>{{ i.title }}</h1>
+    </div>
+    <div class="article_icos">
+          <img  src="/static/time/img/日期.png">&nbsp;<span>{{ i.time|date:"Y-m-d"}}</span>
+         &nbsp; <a href="/likes"><img src="/static/time/img/浏览.png"></a>&nbsp;<span>{{ i.total_views}}浏览</span>
+          &nbsp; <img  src="/static/time/img/数量统计.png">&nbsp;<span>共{{ article_fontnums }}个字</span>
+  &nbsp; <img  src="/static/time/img/分类.png">&nbsp;<span>{{ i.column}}</span>
+    </div>
+    <div class="article_right_footer">
+      {{ article|safe }}
+    </div>
+   {%endfor%}
+    </div>
+</body>
+</html>

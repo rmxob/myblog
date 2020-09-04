@@ -1,0 +1,39 @@
+{% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'time/css/moblemain.css' %}">
+</head>
+<body>
+<div class="main">
+ {% for i in  blog_list  %}
+   <div class="article">
+        <div class="main_time">
+            <span class="month">{{ i.time.month }}月</span>
+            <span class="day">{{ i.time.day}}</span>
+        </div>
+       <div class="main_label">
+        <a>{{ i.column }}</a>
+        </div>
+       <div class="main_title">
+          {{ i.title }}
+       </div>
+       <div class="main_authorinfo">
+           <img src="/static/time/img/作者.png">xob &nbsp;
+           <img src="/static/time/img/日期.png"> &nbsp;{{ i.time|date:"Y-m-d" }}
+       </div>
+       <div class="main_content">
+          {{ i.content |safe }}
+       </div>
+        <a class="readall" href="/article/{{ i.id }}">
+            阅读全文>>
+        </a>
+   </div>
+
+{% endfor %}
+   </div>
+</body>
+</html>

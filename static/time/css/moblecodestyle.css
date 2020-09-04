@@ -71,3 +71,10 @@ pre{
 .codehilite .vi { color: #19177C } /* Name.Variable.Instance */
 .codehilite .vm { color: #19177C } /* Name.Variable.Magic */
 .codehilite .il { color: #666666 } /* Literal.Number.Integer.Long */
+p img{
+    width: 100%;
+    height:auto;
+    background-color: crimson;
+    display: block;
+
+}

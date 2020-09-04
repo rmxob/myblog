@@ -61,6 +61,7 @@ def article(request):
     blog_all=MyBlog.objects.all().filter(id=article_num)
     for i in blog_all:
         article_detiles = i.content
+        article_title=i.title
     article_fontnums=len(article_detiles)
     md=markdown.Markdown(extensions=[
         'markdown.extensions.extra',
@@ -81,7 +82,7 @@ def article(request):
     #将ua的值传到该函数的参数预留项里
     mobile = judge_pc_or_mobile(ua)
     if mobile:
-         return render(request, 'pubu/mobledetail.html',{'article':article_markdown,'article_fontnums':article_fontnums,'toc':md.toc,'blog_all':blog_all})
+         return render(request, 'pubu/mobledetail.html',{'article':article_markdown,'article_fontnums':article_fontnums,'toc':md.toc,'blog_all':blog_all,'title':article_title})
     else:
          return render(request,'pubu/articles.html',{'article':article_markdown,'article_fontnums':article_fontnums,'toc':md.toc,'blog_all':blog_all})
 def time(request):

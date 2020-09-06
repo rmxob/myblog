@@ -13,7 +13,7 @@
 .article{
     width: 85%;
     padding: 10px 0px 10px 10px;
-    border: 1px solid #EBEEF5;
+    border: 3px solid #EBEEF5;
     background-color: #FFF;
     margin-top: 1em;
     position: relative;
@@ -94,7 +94,7 @@
     display: inline-block;
     color: #fff;
     z-index: 4;
-    top: 10em;
+    top: 8em;
     left: -0.5em;
 }
 
@@ -131,6 +131,7 @@
 
 
 .article_right_footer{
+    padding: 3em;
     box-shadow: 0 1px 3px rgba(26,26,26,.1);
     background: white;
     border-radius: 4px;

@@ -179,12 +179,6 @@ import re
 
 
 def judge_pc_or_mobile(ua):
-    """
-    判断访问来源是pc端还是手机端
-    :param ua: 访问来源头信息中的User-Agent字段内容
-    :return:
-    """
-
     factor = ua
     is_mobile = False
 

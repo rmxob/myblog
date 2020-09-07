@@ -2,9 +2,14 @@
     width: 100%;
     float: right;
 }
+img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
 body{
        margin: 0;
-
     background:url('https://up.enterdesk.com/edpic/34/9b/89/349b896e4da8e9872a9febf69e258527.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
    -moz-background-size: cover;

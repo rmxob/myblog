@@ -14,12 +14,12 @@
     <script src="https://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
     <script>
    $(function(){
-    $(window).scroll(function(){  //只要窗口滚动,就触发下面代码
-        var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
+    $(window).scroll(function(){
+        var scrollt = document.documentElement.scrollTop + document.body.scrollTop;
 
-        if( scrollt >500 ){  //判断滚动后高度超过200px,就显示
+        if( scrollt >500 ){
 
-            $(".toTop").fadeIn(400); //淡入
+            $(".toTop").fadeIn(400);
 
         }else{
             $(".toTop").stop().fadeOut(400); //如果返回或者没有超过,就淡出.必须加上stop()停止之前动画,否则会出现闪动
@@ -73,7 +73,7 @@
      <div class="sort_span"><h3>分类</h3></div>
         <br>
         <div class="sort_icos">
-            <di+v class="sort_ul">
+            <div class="sort_ul">
                 <div class="sort_img1">
                     <img src="{% static 'time/img/python.png' %}"><a href="/main/1">python基础</a>
                 </div>

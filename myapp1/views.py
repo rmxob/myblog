@@ -12,6 +12,7 @@ def index(request):
         blog=i.content
         title=i.title
     return HttpResponse("你还没有一篇文章") if blog_num==0 else render(request,'pubu/index.html',{'blog01':blog,'title01':title,'blog_all':blog_all})
+
 #注册
 def resiger1(request):
     return render(request,'pubu/register.html')
@@ -28,6 +29,9 @@ def login(request):
     return HttpResponse("用户名或密码错误")
 import markdown
 from .models import *
+
+
+#注册登录模块
 def save_uid(request):
     all=new_resiger.objects.all()
     uid=request.GET.get('username')
@@ -56,6 +60,8 @@ def save_uid(request):
     return  HttpResponse("用户名已存在") if is_exist else render(request,"pubu/resiger_success.html")
 def now_login(request):
     return render(request,"pubu/resiger_success.html")
+
+#文章详细页面
 def article(request):
     article_num=request.get_full_path().split('/')[2]
     blog_all=MyBlog.objects.all().filter(id=article_num)
@@ -85,6 +91,9 @@ def article(request):
          return render(request, 'pubu/mobledetail.html',{'article':article_markdown,'article_fontnums':article_fontnums,'toc':md.toc,'blog_all':blog_all,'title':article_title})
     else:
          return render(request,'pubu/articles.html',{'article':article_markdown,'article_fontnums':article_fontnums,'toc':md.toc,'blog_all':blog_all})
+
+
+#舍弃的jquery页面
 def time(request):
     blog_all = MyBlog.objects.all()
     blog_num = len(blog_all)
@@ -92,6 +101,9 @@ def time(request):
         blog = i.content
         title = i.title
     return render(request,'time/index.html',{'blog_all':blog_all})
+
+
+#分类查找文章
 def main(request):
     cloum_num=request.get_full_path().split('/')[2]
     blog_all = MyBlog.objects.all().filter(column_id=cloum_num)
@@ -102,8 +114,19 @@ def main(request):
         'markdown.extensions.toc'  # 自动生成目录
     ]) # 修改blog.content内容为html
     blog_all = blog_all[::-1]
-    return render(request,'pubu/main.html',{'blog_list':blog_all})
+    total = request.headers
+    # ua就是通过字典取值的方式拿到返回的user-agent,最后传递到pc_or_mobile.py中的ua
+    ua = total["User-Agent"]
+    # 调用pc_or_mobile.py文件里面的函数judge_pc_or_mobile开始判断
+    # 将ua的值传到该函数的参数预留项里
+    mobile = judge_pc_or_mobile(ua)
+    if not mobile:
+     return render(request,'pubu/main.html',{'blog_list':blog_all})
+    else:
+        return render(request, 'pubu/moblemain.html', {'blog_list': blog_all})
 
+
+#所有页面
 from django.core.paginator import Paginator
 def main_all(request):
     blog_all = MyBlog.objects.all()
@@ -124,15 +147,6 @@ def main_all(request):
          return render(request, 'pubu/moblemain.html', {'blog_list': blog_all})
     else:
         return render(request, 'pubu/main.html', {'blog_list': blog_all})
-
-
-
-
-
-
-
-
-
 
 
 # 验证码
@@ -168,16 +182,8 @@ def verifycode(request):
    im.save(buf,'png')
    return HttpResponse(buf.getvalue(),'image/png')
 
-
-
-
-
-
-
 # 判断设备信息
 import re
-
-
 def judge_pc_or_mobile(ua):
     factor = ua
     is_mobile = False
@@ -215,3 +221,6 @@ def judge_pc_or_mobile(ua):
     return is_mobile
 
 
+#404页面
+def page_not_found(request,exception):
+    return render(request, 'pubu/../templates/404.html')

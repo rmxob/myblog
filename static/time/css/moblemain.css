@@ -2,6 +2,17 @@
     width: 100%;
     float: right;
 }
+body{
+       margin: 0;
+
+    background:url('https://up.enterdesk.com/edpic/34/9b/89/349b896e4da8e9872a9febf69e258527.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+
+}
+
 .main_title{
     height: 10%;
     font-size: 10px;
@@ -10,6 +21,35 @@
     text-align: center;
     margin-top: 2em;
 }
+.c{
+    height:3em;
+    border: 1px solid blue;
+
+}
+.sort_ul
+{
+    float: left;
+
+}
+.sort_img1{
+    margin-top: 0.3em;
+     margin-left: 0.4em;
+    width: 10%;
+    height: 10%;
+    float: left;
+
+}
+a{
+    text-decoration: none;
+  }
+.moble_header img{
+      width: 2em;
+    height: 2em;
+    margin-left: 1em;
+    margin-top: 1em;
+
+}
+
 .article{
     width: 85%;
     padding: 10px 0px 10px 10px;
@@ -62,7 +102,7 @@
     text-align: center;
 }
 .main_authorinfo img{
-    width: 3%;
+    width: 8%;
     height: 100%;
 }
 
@@ -131,11 +171,10 @@
 
 
 .article_right_footer{
-    padding: 3em;
+    padding: 1em;
     box-shadow: 0 1px 3px rgba(26,26,26,.1);
     background: white;
     border-radius: 4px;
-    width: 100%;
     height: 100%;
     margin-top: 2em;
     overflow: scroll;
@@ -143,7 +182,7 @@
 }
 .article_title{
     box-shadow: 0 2px 3px rgba(26,26,26,.1);
-    background: white;
+
     border-radius: 4px;
     width: 100%;
     height: 100%;
@@ -153,10 +192,10 @@
 }
 .article_icos{
     /*box-shadow: 0 2px 3px rgba(26,26,26,.1);*/
-    background: white;
+
     border-radius: 4px;
     width: 100%;
-    height: 1em;
+    height: 1.5em;
     margin: auto;
     position: relative;
     /*border: 1px solid blue;*/
@@ -168,4 +207,11 @@
 }
 .article_icos span{
     color: #777777;
+}
+.all{
+    width: 100%;
+}
+.list_img{
+    width: 2em;
+    height: 2em;
 }

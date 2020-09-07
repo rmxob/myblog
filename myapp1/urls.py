@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.urls import path,re_path
 from . import views
+import myapp1
+from django.conf.urls import handler404, handler500
 app_name='myapp1'
 urlpatterns = [
     re_path('^$',views.main_all),
@@ -11,6 +13,8 @@ urlpatterns = [
     re_path('^time$', views.time),
     re_path('^nowlogin$', views.now_login),
     re_path('^verifycode$', views.verifycode),
-    re_path('^main$', views.main),
+    re_path('^main', views.main),
     re_path('^all$', views.main_all),
 ]
+
+#

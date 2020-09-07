@@ -1,22 +1,8 @@
+{% extends 'pubu/moble.html' %}
 {% load  static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    {% if  title %}
-    <title>{{ title }}</title>
-    {% endif %}
-    {% if not title %}
-        <title>Orb 银河之光 召唤着我</title>
-    {% endif %}
-    <link rel="stylesheet" type="text/css" href="{% static 'time/css/moblemain.css' %}">
-    <link rel="shortcut icon" href="{% static 'time/img/mainico2.ico' %}" type="image/x-icon">
-    <link rel="icon" href="{% static 'time/img/mainico2.ico' %}" type="image/x-icon">
-</head>
-<body>
-<div class="main">
- {% for i in  blog_list  %}
+
+{% block moble%}
+    {% for i in  blog_list  %}
    <div class="article">
         <div class="main_time">
             <span class="month">{{ i.time.month }}月</span>
@@ -39,8 +25,5 @@
             阅读全文>>
         </a>
    </div>
-
 {% endfor %}
-   </div>
-</body>
-</html>
+{% endblock %}

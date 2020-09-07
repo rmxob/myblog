@@ -1,0 +1,117 @@
+{% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    {% if  title %}
+    <title>{{ title }}</title>
+    {% endif %}
+    {% if not title %}
+        <title>Orb 银河之光 召唤着我</title>
+    {% endif %}
+    <link rel="stylesheet" type="text/css" href="{% static 'time/css/moblemain.css' %}">
+    <link rel="shortcut icon" href="{% static 'time/img/mainico2.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'time/img/mainico2.ico' %}" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="{% static 'time/css/normalize.css' %}">
+	<link href="{% static 'time/css/canvi.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+  	<aside class="myCanvasNav canvi-navbar">
+	<div class="canvi-user-info">
+	<div class="canvi-user-info__image">
+	<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1953527241,3021876066&fm=26&gp=0.jpg">
+	</div>
+	<div class="canvi-user-info__data">
+	<span class="canvi-user-info__title">rmxob</span>
+	<a href="#" class="canvi-user-info__meta">愿世间美好与你环环相扣</a>
+	<div class="canvi-user-info__close" onclick="t.close();"></div>
+	</div>
+	</div>
+	<ul class="canvi-navigation">
+	<li>
+	<a href="/main/1" class="canvi-navigation__item">
+	<img class="list_img" src="{% static 'time/img/python.png' %}">&nbsp;&nbsp;&nbsp;
+	<span class="canvi-navigation__icon icon-iconmonstr-code-2"></span>
+	</img>
+	<span class="canvi-navigation__text">python基础</span>
+	</a>
+	</li>
+	<li>
+	<a href="/main/5" class="canvi-navigation__item">
+	<img class="list_img" src="{% static 'time/img/前端开发.png' %}" >&nbsp;&nbsp;&nbsp;
+	<span class="canvi-navigation__icon icon-iconmonstr-code-5"></span>
+	</span>
+	<span class="canvi-navigation__text">前端基础</span>
+	</a>
+	</li>
+	<li>
+	<a href="/main/7" class="canvi-navigation__item">
+	<img class="list_img" src="{% static 'time/img/信息爬取.png' %}">&nbsp;&nbsp;&nbsp;
+	<span class="canvi-navigation__icon icon-iconmonstr-code-9"></span>
+	</span>
+	<span class="canvi-navigation__text">爬虫基础</span>
+	</a>
+	</li>
+	<li>
+	<a href="/main/3" class="canvi-navigation__item">
+	<img class="list_img" src="{% static 'time/img/生活.png' %}">&nbsp;&nbsp;&nbsp;
+	<span class="canvi-navigation__icon icon-iconmonstr-code-11"></span>
+	</span>
+	<span class="canvi-navigation__text">生活随笔</span>
+	</a>
+	</li>
+	<li>
+	<a href="/main/2" class="canvi-navigation__item">
+	<img class="list_img" src="{% static 'time/img/django.png' %}">&nbsp;&nbsp;&nbsp;
+	<span class="canvi-navigation__icon icon-iconmonstr-code-13"></span>
+	</span>
+	<span class="canvi-navigation__text">django</span>
+	</a>
+	</li>
+	</ul>
+	</aside>
+    <main class="js-canvi-content">
+<div class="moble_header moble_header">
+    <img  class="js-canvi-open-button--left img1" src="{% static 'time/img/菜单.png' %}">&nbsp;&nbsp;&nbsp;
+</div>
+    </main>
+<div class="main">
+    {% block moble %}
+
+    {% endblock%}
+   </div>
+  <script src="{% static 'time/js/canvi.js' %}" type="text/javascript"></script>
+	<script>
+	var t = new Canvi({
+	        content: ".js-canvi-content",
+	        isDebug: !1,
+	        navbar: ".myCanvasNav",
+	        openButton: ".js-canvi-open-button--left",
+	        position: "left",
+	        pushContent: !1,
+	        speed: "0.2s",
+	        width: "100vw",
+	        responsiveWidths: [ {
+	            breakpoint: "600px",
+	            width: "280px"
+	        }, {
+	            breakpoint: "1280px",
+	            width: "320px"
+	        }, {
+	            breakpoint: "1600px",
+	            width: "380px"
+	        } ]
+	    })
+	</script>
+	<script type="text/javascript">
+		var canviRight = new Canvi({
+		    content: '.js-canvi-content',
+		    navbar: '.js-canvi-navbar--right',
+		    openButton: '.js-canvi-open-button--right',
+		    position: "right"
+		});
+	</script>
+</body>
+
+</html>

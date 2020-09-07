@@ -1,3 +1,4 @@
+from django.conf.urls import handler404
 from django.contrib import admin
 from django.urls import path,include
 import myapp1
@@ -14,3 +15,4 @@ urlpatterns = [
 if settings.DEBUG:
     # static files (images, css, javascript, etc.)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

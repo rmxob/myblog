@@ -1,6 +1,8 @@
 .main{
     width: 100%;
     float: right;
+    margin-top: -5em;
+    padding-bottom: 1em;
 }
 img{
     width: auto;
@@ -47,14 +49,42 @@ body{
 a{
     text-decoration: none;
   }
-.moble_header img{
-      width: 2em;
-    height: 2em;
-    margin-left: 1em;
-    margin-top: 1em;
+.img1{
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+   left: 1em;
+   top: 1em;
+}
+.name_saying{
+    text-align: center;
+
+    position: relative;
+    bottom: 9em;
+}
+.name{
+     position: relative;
+    font-size: 2em;
+    color: #fff;
+}
+.saying{
+    color: white;
+}
+.moble_header{
+    position: relative;
+}
+.menu{
+    color: white;
+    position: absolute;
+    left:4em;
+    top: 1.5em;
+    font-size: 12px;
+}
+.moble_bgimg{
+
+margin-top: -1em;
 
 }
-
 .article{
     width: 85%;
     padding: 10px 0px 10px 10px;
@@ -219,4 +249,16 @@ a{
 .list_img{
     width: 2em;
     height: 2em;
+}
+.footer_back{
+     height: auto!important;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.footer_back .blog{
+    text-align: center;
+    position: relative;
+    top: 6em;
+
 }

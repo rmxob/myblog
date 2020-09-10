@@ -72,15 +72,26 @@
 	</ul>
 	</aside>
     <main class="js-canvi-content">
-<div class="moble_header moble_header">
-    <img  class="js-canvi-open-button--left img1" src="{% static 'time/img/菜单.png' %}">&nbsp;&nbsp;&nbsp;
+<div class="moble_header">
+    <img  class="js-canvi-open-button--left img1" src="{% static 'time/img/菜单 (1).png' %}"><span class="menu js-canvi-open-button--left">MENU</span>&nbsp;&nbsp;&nbsp;
+    <img class="moble_bgimg" src="http://pic.netbian.com/uploads/allimg/170420/233018-14927022187d1a.jpg">
+   <div class="name_saying">
+       <span class="name">rmxob</span><br>
+       <span class="saying">银河之光，召唤着我</span>
+   </div>
+
+
 </div>
     </main>
+
+
 <div class="main">
     {% block moble %}
 
     {% endblock%}
    </div>
+
+
   <script src="{% static 'time/js/canvi.js' %}" type="text/javascript"></script>
 	<script>
 	var t = new Canvi({
@@ -112,6 +123,10 @@
 		    position: "right"
 		});
 	</script>
+
+
+
+
 </body>
 
 </html>

@@ -1,8 +1,7 @@
 {% extends 'pubu/mainmodle.html' %}
 {% load  static %}
 {% block main %}
-
-    <title>我的小站</title>
+    <title>{{title}}</title>
     {% for i in blog_all %}
     <div class="article_title">
         <h1>{{ i.title }}</h1>

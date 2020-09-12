@@ -175,7 +175,7 @@ def article(request):
     #将ua的值传到该函数的参数预留项里
     mobile = judge_pc_or_mobile(ua)
     if mobile:
-         return render(request, 'pubu/mobledetail.html',{'article':article_markdown,'article_fontnums':article_fontnums,'toc':md.toc,'blog_all':blog_all,'title':article_title})
+         return render(request, 'pubu/mobledetail.html',{'article':article_markdown,'article_fontnums':article_fontnums,'toc':md.toc,'blog_all':blog_all,'title':article_title,'likes':likes})
     else:
          return render(request,'pubu/articles.html',{'article':article_markdown,'article_fontnums':article_fontnums,'toc':md.toc,'blog_all':blog_all,'title':article_title,'likes':likes})
 

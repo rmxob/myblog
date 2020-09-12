@@ -83,3 +83,17 @@ p img{
     background-color: crimson;
     display: block;
 }
+.support{
+    width: 30em;
+    height: 5em;
+    margin-left: 1.6em;
+    margin-top: 3em;
+}
+.support .btn{
+    width: 10em;
+   height: 3em;
+    text-align: center;
+}
+.support img{
+    width: 25%;
+}

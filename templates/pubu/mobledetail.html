@@ -7,10 +7,30 @@
    <link rel="stylesheet" type="text/css" href="{% static 'time/css/moblecodestyle.css' %}">
        <link rel="stylesheet" type="text/css" href="{% static 'time/css/moblemain.css' %}">
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-
     <title>{{ title }}</title>
     <link rel="shortcut icon" href="{% static 'time/img/mainico2.ico' %}" type="image/x-icon">
     <link rel="icon" href="{% static 'time/img/mainico2.ico' %}" type="image/x-icon">
+      <script>
+   window.onload=function (ev) {
+       var btn = document.getElementById("support_btn");
+       var test = window.location.href.split('/')[4];
+       url='support'+test.toString()
+       btn.onclick = function (ev1) {
+           var xmlhttp=new XMLHttpRequest();
+         xmlhttp.open("GET",url,true);
+         xmlhttp.send();
+         xmlhttp.onreadystatechange=function (ev2) {
+        if (xmlhttp.readyState==4) {
+       if (xmlhttp.status >= 200 && xmlhttp.status < 300 || xmlhttp.status == 304) {
+          document.getElementById("likes_num").innerText=xmlhttp.responseText;
+       } else {
+          alert("点赞失败")
+       }
+   }
+}
+       }
+   }
+    </script>
 </head>
 <body>
     <div class="all">
@@ -28,6 +48,10 @@
       {{ article|safe }}
     </div>
    {%endfor%}
+    </div>
+  <div class="support">
+        <button class="btn btn-default" id="support_btn"><span>点赞</span><img src="{% static 'time/img/点赞.png' %}"><span id="likes_num">{{ likes }}</span></button>
+        <button class="btn btn-default" type="button" >支持</button>
     </div>
 </body>
 </html>

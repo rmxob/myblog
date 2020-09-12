@@ -30,7 +30,7 @@ class MyBlog(models.Model):
     title = models.CharField(u'标题',max_length=30)
     time=models.DateField(auto_now=True)
     total_views = models.PositiveIntegerField(default=0)
-    # likes=models.IntegerField(default=0)
+    likes=models.IntegerField(default=0)
     column = models.ForeignKey(
         ArticleColumn,
         null=True,

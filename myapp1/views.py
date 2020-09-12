@@ -132,6 +132,18 @@ def save_uid(request):
 def now_login(request):
     return render(request,"pubu/resiger_success.html")
 
+#点赞
+def support(request):
+    cloum_num = request.get_full_path().split('/')[2]
+    cloum_num=cloum_num[7:]
+    blog = MyBlog.objects.get(id=cloum_num)
+    try:
+        blog.likes+=1
+        blog.save(update_fields=['likes'])
+        print("点赞成功")
+        return HttpResponse(blog.likes)
+    except:
+     return HttpResponse("点赞失败")
 #文章详细页面
 def article(request):
     article_num=request.get_full_path().split('/')[2]
@@ -139,6 +151,7 @@ def article(request):
     for i in blog_all:
         article_detiles = i.content
         article_title=i.title
+        likes=i.likes
     article_fontnums=len(article_detiles)
     md=markdown.Markdown(extensions=[
         'markdown.extensions.extra',
@@ -161,8 +174,7 @@ def article(request):
     if mobile:
          return render(request, 'pubu/mobledetail.html',{'article':article_markdown,'article_fontnums':article_fontnums,'toc':md.toc,'blog_all':blog_all,'title':article_title})
     else:
-         return render(request,'pubu/articles.html',{'article':article_markdown,'article_fontnums':article_fontnums,'toc':md.toc,'blog_all':blog_all,'title':article_title})
-
+         return render(request,'pubu/articles.html',{'article':article_markdown,'article_fontnums':article_fontnums,'toc':md.toc,'blog_all':blog_all,'title':article_title,'likes':likes})
 
 #舍弃的jquery页面
 def time(request):

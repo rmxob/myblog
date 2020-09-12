@@ -5,6 +5,7 @@ import myapp1
 from django.conf.urls import handler404, handler500
 app_name='myapp1'
 urlpatterns = [
+    re_path('^article/support', views.support),
     re_path('^$',views.main_all),
     re_path('^resiger$',views.resiger1),
     re_path('^save$', views.save_uid),
@@ -15,6 +16,7 @@ urlpatterns = [
     re_path('^verifycode$', views.verifycode),
     re_path('^main', views.main),
     re_path('^all$', views.main_all),
+
 ]
 
 #

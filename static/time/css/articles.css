@@ -279,3 +279,21 @@ img{
     position: relative;
     top: 6em;
 }
+.support{
+    width: 30em;
+    height: 5em;
+    margin-left: 42%;
+    margin-top: 3em;
+}
+.support .btn{
+    width: 10em;
+   height: 3em;
+    text-align: center;
+}
+.support img{
+    width: 25%;
+}
+.support .btn span{
+
+}
+

@@ -151,7 +151,10 @@ def article(request):
     for i in blog_all:
         article_detiles = i.content
         article_title=i.title
-        likes=i.likes
+        try:
+         likes=i.likes
+        except:
+            likes=0
     article_fontnums=len(article_detiles)
     md=markdown.Markdown(extensions=[
         'markdown.extensions.extra',

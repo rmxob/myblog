@@ -84,7 +84,7 @@ p img{
     display: block;
 }
 .support{
-    width: 30em;
+    width: 20em;
     height: 5em;
     margin-left: 1.6em;
     margin-top: 3em;
@@ -93,6 +93,7 @@ p img{
     width: 10em;
    height: 3em;
     text-align: center;
+    margin-left: 25%;
 }
 .support img{
     width: 25%;

@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'zd#=xb&l@*)^7%89m#@h8^&d7$ouypap3z@-66$o@z@u12y(9w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =False
+DEBUG =True
 ALLOWED_HOSTS = ["*"]
 # Application definition
 
@@ -47,7 +47,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-
 ]
 
 ROOT_URLCONF = 'untitled.urls'
@@ -79,7 +78,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'USER': 'root',
-        'PASSWORD': '1k2k3k',
+        'PASSWORD': '123456',
         'HOST': 'localhost',
         'PORT': '3306',
         'NAME': 'xob',

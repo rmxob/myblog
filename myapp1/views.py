@@ -137,14 +137,10 @@ def support(request):
     cloum_num = request.get_full_path().split('/')[2]
     cloum_num=cloum_num[7:]
     blog = MyBlog.objects.get(id=cloum_num)
-    try:
-        blog.likes+=1
-        blog.save(update_fields=['likes'])
-        response['is_support'] = True
-        response['likes'] = blog.likes
-        return HttpResponse(blog.likes)
-    except:
-     return HttpResponse("点赞失败")
+    blog.likes+=1
+    blog.save(update_fields=['likes'])
+    return HttpResponse(blog.likes)
+
 #文章详细页面
 def article(request):
     article_num=request.get_full_path().split('/')[2]

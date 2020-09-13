@@ -1,48 +1,86 @@
 {% extends 'pubu/mainmodle.html' %}
 {% load  static %}
 {% block main %}
+   <link rel="stylesheet" type="text/css" href="{% static 'time/css/user_layer.css' %}">
+　　<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src={% static 'layer-v3.1.1/layer-v3.1.1/layer/layer.js' %}></script>
     <script>
-   window.onload=function (ev) {
-       var btn = document.getElementById("support_btn");
-       var test = window.location.href.split('/')[4];
-       url='support'+test.toString()
-       btn.onclick = function (ev1) {
-           var xmlhttp=new XMLHttpRequest();
-         xmlhttp.open("GET",url,true);
-         xmlhttp.send();
-         xmlhttp.onreadystatechange=function (ev2) {
-        if (xmlhttp.readyState==4) {
-       if (xmlhttp.status >= 200 && xmlhttp.status < 300 || xmlhttp.status == 304) {
-          document.getElementById("likes_num").innerText=xmlhttp.responseText;
-       } else {
-          alert("点赞失败")
-       }
-   }
-}
-       }
-   }
+        window.onload = function () {
+            var btn = document.getElementById("support_btn");
+            var test = window.location.href.split('/')[4];
+            url1 = 'support' + test.toString()
+            var btn = document.getElementById("support_btn");
+            btn.onclick = function () {
+                if (!localStorage.getItem(test)){
+                   httpxml= $.ajax({
+                    url: url1,
+                    data: {
+                    },
+                    success: function (result) {
+                        localStorage.setItem(test,true);
+                        document.getElementById("likes_num").innerText=httpxml.responseText;
+                        layer.open({
+                            type: 1,
+                            title: false,
+                            closeBtn: 0,
+                            shadeClose: true,
+                            skin: 'user_layer',
+                            content: '',
+                            time:1200,
+                    });
+                    }
+                });
+                } else {
+                   layer.msg('你已经点过赞了',{time: 1000});
+                }
+            }
+        }
     </script>
-    <title>{{title}}</title>
+
+    {#    <script>#}
+    {#   window.onload=function (ev) {#}
+    {#       var btn = document.getElementById("support_btn");#}
+    {#       var test = window.location.href.split('/')[4];#}
+    {#       url='support'+test.toString()#}
+    {#       btn.onclick = function (ev1) {#}
+    {#       var xmlhttp=new XMLHttpRequest();#}
+    {#         xmlhttp.open("GET",url,true);#}
+    {#         xmlhttp.send();#}
+    {#         xmlhttp.onreadystatechange=function (ev2) {#}
+    {#        if (xmlhttp.readyState==4) {#}
+    {#       if (xmlhttp.status >= 200 && xmlhttp.status < 300 || xmlhttp.status == 304) {#}
+    {#           document.getElementById("likes_num").innerText+=1#}
+    {#       } else {#}
+    {#          alert("点赞失败")#}
+    {#       }#}
+    {#   }#}
+    {#}#}
+    {#       }#}
+    {#   }#}
+    {#    </script>#}
+    <title>{{ title }}</title>
     {% for i in blog_all %}
-    <div class="article_title">
-        <h1>{{ i.title }}</h1>
-    </div>
-    <div class="article_icos">
-          <img  src="/static/time/img/日期.png">&nbsp;<span>{{ i.time|date:"Y-m-d"}}</span>
-         &nbsp; <a href="/likes"><img src="/static/time/img/浏览.png"></a>&nbsp;<span>{{ i.total_views}}浏览</span>
-          &nbsp; <img  src="/static/time/img/数量统计.png">&nbsp;<span>共{{ article_fontnums }}个字</span>
-  &nbsp; <img  src="/static/time/img/分类.png">&nbsp;<span>{{ i.column}}</span>
-    </div>
-    <div class="article_toc">
-    <h3>目录</h3>
-           {{toc|safe}}
-    </div>
-    <div class="article_right_footer">
-      {{ article|safe }}
-    </div>
+        <div class="article_title">
+            <h1>{{ i.title }}</h1>
+        </div>
+        <div class="article_icos">
+            <img src="/static/time/img/日期.png">&nbsp;<span>{{ i.time|date:"Y-m-d" }}</span>
+            &nbsp; <a href="/likes"><img src="/static/time/img/浏览.png"></a>&nbsp;<span>{{ i.total_views }}浏览</span>
+            &nbsp; <img src="/static/time/img/数量统计.png">&nbsp;<span>共{{ article_fontnums }}个字</span>
+            &nbsp; <img src="/static/time/img/分类.png">&nbsp;<span>{{ i.column }}</span>
+        </div>
+        <div class="article_toc">
+            <h3>目录</h3>
+            {{ toc|safe }}
+        </div>
+        <div class="article_right_footer">
+            {{ article|safe }}
+        </div>
     {% endfor %}
     <div class="support">
-        <button class="btn btn-default" id="support_btn"><span>点赞</span><img src="{% static 'time/img/点赞.png' %}"><span id="likes_num">{{ likes }}</span></button>
+        <button class="btn btn-default" id="support_btn"><span>点赞</span><img src="{% static 'time/img/点赞.png' %}"><span
+                id="likes_num">{{ likes }}</span></button>
         <button class="btn btn-default" type="button" >支持</button>
+
     </div>
 {% endblock %}

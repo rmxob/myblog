@@ -181,10 +181,7 @@ img{
    -ms-transform: scale(1.2); /*IE9*/
    -o-transform: scale(1.2); /*Opera*/
 }
-.sort_ul img{
-
-
-}
+/*分类*/
 .sort{
     width:18%;
     position: relative;

@@ -135,12 +135,16 @@ def now_login(request):
 #点赞
 def support(request):
     cloum_num = request.get_full_path().split('/')[2]
-    cloum_num=cloum_num[7:]
+    cloum_num=cloum_num[7:8]
     blog = MyBlog.objects.get(id=cloum_num)
+    response={'is_support':False,'likes':blog.likes}
+    a=request.GET.get('is_likes')
+    print(a)
     try:
         blog.likes+=1
         blog.save(update_fields=['likes'])
-        print("点赞成功")
+        response['is_support'] = True
+        response['likes'] = blog.likes
         return HttpResponse(blog.likes)
     except:
      return HttpResponse("点赞失败")
@@ -187,8 +191,6 @@ def time(request):
         blog = i.content
         title = i.title
     return render(request,'time/index.html',{'blog_all':blog_all})
-
-
 #分类查找文章
 def main(request):
     cloum_num=request.get_full_path().split('/')[2]
@@ -210,8 +212,6 @@ def main(request):
      return render(request,'pubu/main.html',{'blog_list':blog_all})
     else:
         return render(request, 'pubu/moblemain.html', {'blog_list': blog_all})
-
-
 #所有页面
 from django.core.paginator import Paginator
 def main_all(request):
@@ -233,9 +233,6 @@ def main_all(request):
          return render(request, 'pubu/moblemain.html', {'blog_list': blog_all})
     else:
         return render(request, 'pubu/main.html', {'blog_list': blog_all})
-
-
-
 #404页面
 def page_not_found(request,exception):
     return render(request, 'pubu/../templates/404.html')

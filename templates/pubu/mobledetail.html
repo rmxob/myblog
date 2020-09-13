@@ -7,29 +7,44 @@
    <link rel="stylesheet" type="text/css" href="{% static 'time/css/moblecodestyle.css' %}">
        <link rel="stylesheet" type="text/css" href="{% static 'time/css/moblemain.css' %}">
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    　<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src={% static 'layer-v3.1.1/layer-v3.1.1/layer/layer.js' %}></script>
+       <link rel="stylesheet" type="text/css" href="{% static 'time/css/user_layer.css' %}">
     <title>{{ title }}</title>
     <link rel="shortcut icon" href="{% static 'time/img/mainico2.ico' %}" type="image/x-icon">
     <link rel="icon" href="{% static 'time/img/mainico2.ico' %}" type="image/x-icon">
+
       <script>
-   window.onload=function (ev) {
-       var btn = document.getElementById("support_btn");
-       var test = window.location.href.split('/')[4];
-       url='support'+test.toString()
-       btn.onclick = function (ev1) {
-           var xmlhttp=new XMLHttpRequest();
-         xmlhttp.open("GET",url,true);
-         xmlhttp.send();
-         xmlhttp.onreadystatechange=function (ev2) {
-        if (xmlhttp.readyState==4) {
-       if (xmlhttp.status >= 200 && xmlhttp.status < 300 || xmlhttp.status == 304) {
-          document.getElementById("likes_num").innerText=xmlhttp.responseText;
-       } else {
-          alert("点赞失败")
-       }
-   }
-}
-       }
-   }
+  window.onload = function () {
+            var btn = document.getElementById("support_btn");
+            var test = window.location.href.split('/')[4];
+            url1 = 'support' + test.toString()
+            var btn = document.getElementById("support_btn");
+            btn.onclick = function () {
+                if (!localStorage.getItem(test)){
+                   httpxml= $.ajax({
+                    url: url1,
+                    data: {
+                    },
+                    success: function (result) {
+                        localStorage.setItem(test,true);
+                        document.getElementById("likes_num").innerText=httpxml.responseText;
+                        layer.open({
+                            type: 1,
+                            title: false,
+                            closeBtn: 0,
+                            shadeClose: true,
+                            skin: 'user_layer',
+                            content: '',
+                            time:1200,
+                    });
+                    }
+                });
+                } else {
+                   layer.msg('你已经点过赞了',{time: 1000});
+                }
+            }
+        }
     </script>
 </head>
 <body>

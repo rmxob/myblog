@@ -32,8 +32,8 @@
       <list>
         <option value="Python Script" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -55,7 +55,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/pubu/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -66,19 +66,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\myblog\myblog\static\pubu\images" />
-      <recent name="E:\myblog\myblog\static\time\img" />
-      <recent name="E:\myblog\myblog\static\time\css" />
-      <recent name="E:\myblog\myblog\static\time\js" />
-      <recent name="E:\myblog\myblog\static\pubu\pubu\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\myblog\myblog\templates" />
       <recent name="E:\myblog\myblog\templates\pubu" />
       <recent name="D:\Python视频\untitled\static\pubu\css" />
       <recent name="D:\Python视频\untitled\static\pubu\js" />
       <recent name="D:\Python视频\untitled\static\media" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\myblog\myblog\static" />
+      <recent name="E:\myblog\myblog\static\time\js" />
+      <recent name="E:\myblog\myblog\static\pubu\images" />
+      <recent name="E:\myblog\myblog\static\time\img" />
+      <recent name="E:\myblog\myblog\static\time\css" />
     </key>
   </component>
   <component name="RunManager" selected="Django server.untitled">
@@ -206,7 +206,8 @@
       <workItem from="1599817649066" duration="55000" />
       <workItem from="1599820302265" duration="5068000" />
       <workItem from="1599825705917" duration="774000" />
-      <workItem from="1599893295218" duration="6490000" />
+      <workItem from="1599893295218" duration="11007000" />
+      <workItem from="1599961906535" duration="9757000" />
     </task>
     <servers />
   </component>
@@ -218,6 +219,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1596459963222" />
+    <state x="477" y="83" key="#Test:_static.time.css" timestamp="1599971703574">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="83" key="#Test:_static.time.css/0.0.1536.824@0.0.1536.824" timestamp="1599971703574" />
     <state x="372" y="189" key="EditFileWatcherDialog" timestamp="1597043358904">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -230,22 +235,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="589" y="326" width="382" height="172" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1594377069697" />
-    <state width="1493" height="171" key="GridCell.Tab.0.bottom" timestamp="1599900135730">
+    <state width="1493" height="171" key="GridCell.Tab.0.bottom" timestamp="1599967658622">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599900135730" />
-    <state width="1493" height="171" key="GridCell.Tab.0.center" timestamp="1599900135730">
+    <state width="1493" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599967658622" />
+    <state width="1493" height="171" key="GridCell.Tab.0.center" timestamp="1599967658622">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599900135730" />
-    <state width="1493" height="171" key="GridCell.Tab.0.left" timestamp="1599900135730">
+    <state width="1493" height="171" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599967658622" />
+    <state width="1493" height="171" key="GridCell.Tab.0.left" timestamp="1599967658622">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599900135730" />
-    <state width="1493" height="171" key="GridCell.Tab.0.right" timestamp="1599900135730">
+    <state width="1493" height="171" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599967658622" />
+    <state width="1493" height="171" key="GridCell.Tab.0.right" timestamp="1599967658622">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="171" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599900135730" />
+    <state width="1493" height="171" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599967658622" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1598953470569">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -266,10 +271,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1598769209255" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1599893478275">
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1599961935664">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1599893478275" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1599961935664" />
     <state x="377" y="0" width="782" height="824" key="find.popup" timestamp="1597560888121">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -3,34 +3,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<meta name="baidu-site-verification" content="RqAG0FaTsk" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<meta name="description" content="python博文,技术博客,开发语言,代码">
-<meta name="Keywords" content="python,c#,c语言,博客,代码">
+    <meta name="baidu-site-verification" content="RqAG0FaTsk"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="python博文,技术博客,开发语言,代码">
+    <meta name="Keywords" content="python,c#,c语言,博客,代码">
     <link rel="stylesheet" type="text/css" href="{% static 'time/css/articles.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'time/css/modelmain.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'time/css/modelmain.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'pubu/css/code.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'pubu/css/codestyle.css' %}">
+    <link rel="stylesheet" href="{% static 'time/css/audioplayer.css' %}" />
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
     <script>
-   $(function(){
-    $(window).scroll(function(){
-        var scrollt = document.documentElement.scrollTop + document.body.scrollTop;
+        $(function () {
+            $(window).scroll(function () {
+                var scrollt = document.documentElement.scrollTop + document.body.scrollTop;
 
-        if( scrollt >500 ){
+                if (scrollt > 500) {
 
-            $(".toTop").fadeIn(400);
+                    $(".toTop").fadeIn(400);
 
-        }else{
-            $(".toTop").stop().fadeOut(400); //如果返回或者没有超过,就淡出.必须加上stop()停止之前动画,否则会出现闪动
-        }
-    });
+                } else {
+                    $(".toTop").stop().fadeOut(400); //如果返回或者没有超过,就淡出.必须加上stop()停止之前动画,否则会出现闪动
+                }
+            });
 
-    $(".toTop").click(function(){ //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
+            $(".toTop").click(function () { //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
 
-        $("html,body").animate({scrollTop:"0px"},200);
-    });
-});
+                $("html,body").animate({scrollTop: "0px"}, 200);
+            });
+        });
     </script>
     <link rel="shortcut icon" href="{% static 'time/img/mainico2.ico' %}" type="image/x-icon">
     <link rel="icon" href="{% static 'time/img/mainico2.ico' %}" type="image/x-icon">
@@ -41,80 +43,91 @@
 <section class="header" name="gotop">
     <div class="search">
         <form class="form-search">
-            <input type="text"  class="search-input" placeholder="请输入搜索内容">
+            <input type="text" class="search-input" placeholder="请输入搜索内容">
             <button type="submit" class="search-btn"><img src="{% static 'time/img/搜索.png' %}"></button>
         </form>
     </div>
-<div class="header_login">
-<img src="//static.hdslb.com/images/akari.jpg">
-    <span><a href="/nowlogin">登录</a></span>
-    <span><a href="/resiger">注册</a></span>
-</div>
+    <div class="header_login">
+        <img src="//static.hdslb.com/images/akari.jpg">
+        <span><a href="/nowlogin">登录</a></span>
+        <span><a href="/resiger">注册</a></span>
+    </div>
 </section>
 <section class="center">
-<div class="about">
-    <div class="aboutme">
-        <div class="bg_img">
+    <div class="about">
+        <div class="aboutme">
+            <div class="bg_img">
+            </div>
+            <a href="/time" title="rmxob">
+                <div class="head_img"><img
+                        src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1953527241,3021876066&fm=26&gp=0.jpg">
+                </div>
+            </a>
+            <div class="my_saying">
+                <span style="font-size: 2em">rmxob</span>
+                <br><br>
+                <span> If you want to know all at once, you mean what also don't know</span>
+                <br>
+            </div>
+            <div class="icos">
+                <a class="home_ico" href="/all" target="_blank" title="主页"><img class="github"
+                                                                                src="{% static 'time/img/主页.png' %}"></a>
+                <a class="github_ico " href="http://www.github.com/" target="_blank" title="github"><img class="github"
+                                                                                                         src="{% static 'time/img/github.png' %}"></a>
+                <a class="bilibili_ico " href="https://space.bilibili.com/353231593" target="_blank" title="bili"><img
+                        class="github" src="{% static 'time/img/bilibili-fill.png' %}"></a>
+            </div>
         </div>
-       <a href="/time" title="rmxob"> <div class="head_img"><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1953527241,3021876066&fm=26&gp=0.jpg"></div> </a>
-        <div class="my_saying">
-            <span style="font-size: 2em">rmxob</span>
-            <br><br>
-            <span> If you want to know all at once, you mean what also don't know</span>
+        <div class="sort">
+            <div class="sort_span"><h3>分类</h3></div>
             <br>
-        </div>
-        <div class="icos">
-                <a class="home_ico" href="/all" target="_blank" title="主页"><img class="github" src="{% static 'time/img/主页.png' %}"></a>
-				<a class="github_ico " href="http://www.github.com/" target="_blank" title="github"><img class="github" src="{% static 'time/img/github.png' %}"></a>
-                <a class="bilibili_ico " href="https://space.bilibili.com/353231593" target="_blank" title="bili"><img class="github" src="{% static 'time/img/bilibili-fill.png' %}"></a>
-        </div>
-    </div>
-    <div class="sort">
-     <div class="sort_span"><h3>分类</h3></div>
-        <br>
-        <div class="sort_icos">
-            <div class="sort_ul">
-                <div class="sort_img1">
-                    <img src="{% static 'time/img/python.png' %}"><a href="/main/1">python基础</a>
-                </div>
-                <div class="sort_img1">
-                      <img src="{% static 'time/img/django.png' %}"><a href="/main/2">Django</a>
-                </div>
-              <div class="sort_img1">
-                   <img src="{% static 'time/img/生活.png' %}" ><a href="/main/4">生活随笔</a>
-              </div>
-                 <div class="sort_img1">
-                   <img src="{% static 'time/img/个人信息.png' %}" ><a href="/main/5">个人信息</a>
-              </div>
-                 <div class="sort_img1">
-                   <img src="{% static 'time/img/游戏.png' %}" ><a href="/main/7">游戏人生</a>
-              </div>
+            <div class="sort_icos">
+                <div class="sort_ul">
                     <div class="sort_img1">
-                   <img src="{% static 'time/img/前端开发.png' %}" ><a href="/main/6">前端开发</a>
-              </div>
-                     <div class="sort_img1">
-                   <img src="{% static 'time/img/bilibili.png' %}" ><a href="https://space.bilibili.com/353231593/bangumi">我的追番</a>
-              </div>
-                <div class="sort_img1">
-                    <img src="{% static 'time/img/信息爬取.png' %}" ><a href="/main/8">爬虫基础</a>
+                        <img src="{% static 'time/img/python.png' %}"><a href="/main/1">python基础</a>
+                    </div>
+                    <div class="sort_img1">
+                        <img src="{% static 'time/img/django.png' %}"><a href="/main/2">Django</a>
+                    </div>
+                    <div class="sort_img1">
+                        <img src="{% static 'time/img/生活.png' %}"><a href="/main/4">生活随笔</a>
+                    </div>
+                    <div class="sort_img1">
+                        <img src="{% static 'time/img/个人信息.png' %}"><a href="/main/5">个人信息</a>
+                    </div>
+                    <div class="sort_img1">
+                        <img src="{% static 'time/img/游戏.png' %}"><a href="/main/7">游戏人生</a>
+                    </div>
+                    <div class="sort_img1">
+                        <img src="{% static 'time/img/前端开发.png' %}"><a href="/main/6">前端开发</a>
+                    </div>
+                    <div class="sort_img1">
+                        <img src="{% static 'time/img/bilibili.png' %}"><a
+                            href="https://space.bilibili.com/353231593/bangumi">我的追番</a>
+                    </div>
+                    <div class="sort_img1">
+                        <img src="{% static 'time/img/信息爬取.png' %}"><a href="/main/8">爬虫基础</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    {% block main %}
+        {% block main %}
 
-    {% endblock %}
-</div>
-<div class="toTop">
-    <img src="https://i.loli.net/2020/08/30/nRSk9filozWPuct.png" alt="">
-</div>
+        {% endblock %}
+    </div>
+    <div class="toTop">
+        <img src="https://i.loli.net/2020/08/30/nRSk9filozWPuct.png" alt="">
+    </div>
+    <div class="music">
+       <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1436979298&auto=1&height=66"></iframe>
+    </div>
 </section>
-   <div class="footer_back">
-     <div class="blog">
-                <span>©2020 &nbsp; Powered by Django&<a href="https://www.rmxob.cn">rmxob</a> &nbsp; All Rights Reserved.</span>
-                <br>
-                <span>豫ICP备19023410号</span>
-     </div>
-  </div>
+<div class="footer_back">
+    <div class="blog">
+        <span>©2020 &nbsp; Powered by Django&<a href="https://www.rmxob.cn">rmxob</a> &nbsp; All Rights Reserved.</span>
+        <br>
+        <span>豫ICP备19023410号</span>
+    </div>
+</div>
 </body>
 </html>

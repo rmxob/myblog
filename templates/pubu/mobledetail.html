@@ -9,6 +9,8 @@
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
     　<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
     <script src={% static 'layer-v3.1.1/layer-v3.1.1/layer/layer.js' %}></script>
+
+
        <link rel="stylesheet" type="text/css" href="{% static 'time/css/user_layer.css' %}">
     <title>{{ title }}</title>
     <link rel="shortcut icon" href="{% static 'time/img/mainico2.ico' %}" type="image/x-icon">
@@ -18,8 +20,7 @@
   window.onload = function () {
             var btn = document.getElementById("support_btn");
             var test = window.location.href.split('/')[4];
-            url1 = 'support' + test.toString()
-            var btn = document.getElementById("support_btn");
+            url1 = 'support' + test.toString();
             btn.onclick = function () {
                 if (!localStorage.getItem(test)){
                    httpxml= $.ajax({
@@ -28,7 +29,7 @@
                     },
                     success: function (result) {
                         localStorage.setItem(test,true);
-                        document.getElementById("likes_num").innerText=httpxml.responseText;
+                       $("#likes_num").innerText=httpxml.responseText;
                         layer.open({
                             type: 1,
                             title: false,

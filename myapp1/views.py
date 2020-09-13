@@ -135,11 +135,8 @@ def now_login(request):
 #点赞
 def support(request):
     cloum_num = request.get_full_path().split('/')[2]
-    cloum_num=cloum_num[7:8]
+    cloum_num=cloum_num[7:]
     blog = MyBlog.objects.get(id=cloum_num)
-    response={'is_support':False,'likes':blog.likes}
-    a=request.GET.get('is_likes')
-    print(a)
     try:
         blog.likes+=1
         blog.save(update_fields=['likes'])

@@ -12,7 +12,6 @@ def index(request):
         blog=i.content
         title=i.title
     return HttpResponse("你还没有一篇文章") if blog_num==0 else render(request,'pubu/index.html',{'blog01':blog,'title01':title,'blog_all':blog_all})
-
 #注册
 def resiger1(request):
     return render(request,'pubu/register.html')
@@ -29,9 +28,6 @@ def login(request):
     return HttpResponse("用户名或密码错误")
 import markdown
 from .models import *
-
-
-
 # 验证码
 def verifycode(request):
    from PIL import Image,ImageDraw,ImageFont
@@ -208,7 +204,7 @@ def main(request):
 #所有页面
 from django.core.paginator import Paginator
 def main_all(request):
-    blog_all = MyBlog.objects.all()
+    blog_all = MyBlog.objects.exclude(column_id=4)
     for i in range(len(blog_all)):
             blog_all[i].content=markdown.markdown( blog_all[i].content[0:260], extensions=[
             'markdown.extensions.extra',

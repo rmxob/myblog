@@ -37,8 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myapp1',
     'mdeditor',
+    'xadmin',
+    'crispy_forms',
+    'reversion',
 ]
-
+LANGUAGE_CODE = 'zh-Hans'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

@@ -27,10 +27,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -60,7 +60,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -213,7 +213,8 @@
       <workItem from="1600335399263" duration="6000" />
       <workItem from="1600347657341" duration="9000" />
       <workItem from="1600347680352" duration="788000" />
-      <workItem from="1600507465656" duration="661000" />
+      <workItem from="1600507465656" duration="2484000" />
+      <workItem from="1600565274339" duration="3958000" />
     </task>
     <servers />
   </component>
@@ -241,22 +242,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="589" y="326" width="382" height="172" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1594377069697" />
-    <state width="1493" height="217" key="GridCell.Tab.0.bottom" timestamp="1600507951950">
+    <state width="1493" height="103" key="GridCell.Tab.0.bottom" timestamp="1600568103555">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="217" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600507951950" />
-    <state width="1493" height="217" key="GridCell.Tab.0.center" timestamp="1600507951950">
+    <state width="1493" height="103" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600568103555" />
+    <state width="1493" height="103" key="GridCell.Tab.0.center" timestamp="1600568103555">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="217" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600507951950" />
-    <state width="1493" height="217" key="GridCell.Tab.0.left" timestamp="1600507951950">
+    <state width="1493" height="103" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600568103555" />
+    <state width="1493" height="103" key="GridCell.Tab.0.left" timestamp="1600568103555">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="217" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600507951950" />
-    <state width="1493" height="217" key="GridCell.Tab.0.right" timestamp="1600507951950">
+    <state width="1493" height="103" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600568103555" />
+    <state width="1493" height="103" key="GridCell.Tab.0.right" timestamp="1600568103555">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="217" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600507951950" />
+    <state width="1493" height="103" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600568103555" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1598953470569">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -273,10 +274,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1598953470568" />
-    <state x="270" y="55" key="SettingsEditor" timestamp="1600352492517">
+    <state x="270" y="55" key="SettingsEditor" timestamp="1600566625512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600352492517" />
+    <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600566625512" />
     <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1600335399200">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -289,16 +290,6 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599825957306" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myapp1/admin.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/untitled$sds.coverage" NAME="sds Coverage Results" MODIFIED="1594696958531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

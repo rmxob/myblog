@@ -63,19 +63,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\myblog\myblog\templates" />
-      <recent name="E:\myblog\myblog\templates\pubu" />
-      <recent name="D:\Python视频\untitled\static\pubu\css" />
-      <recent name="D:\Python视频\untitled\static\pubu\js" />
-      <recent name="D:\Python视频\untitled\static\media" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\myblog\myblog\static\time\img" />
       <recent name="E:\myblog\myblog\static\time\js" />
       <recent name="E:\myblog\myblog\static\time\css" />
       <recent name="E:\myblog\myblog\static" />
       <recent name="E:\myblog\myblog\static\pubu\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\myblog\myblog\templates" />
+      <recent name="E:\myblog\myblog\templates\pubu" />
+      <recent name="D:\Python视频\untitled\static\pubu\css" />
+      <recent name="D:\Python视频\untitled\static\pubu\js" />
+      <recent name="D:\Python视频\untitled\static\media" />
     </key>
   </component>
   <component name="RunManager" selected="Django Server.untitled">
@@ -214,7 +214,10 @@
       <workItem from="1600347657341" duration="9000" />
       <workItem from="1600347680352" duration="788000" />
       <workItem from="1600507465656" duration="2484000" />
-      <workItem from="1600565274339" duration="3958000" />
+      <workItem from="1600565274339" duration="4570000" />
+      <workItem from="1600590395401" duration="523000" />
+      <workItem from="1601038508871" duration="2500000" />
+      <workItem from="1601085949737" duration="7243000" />
     </task>
     <servers />
   </component>
@@ -242,22 +245,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="589" y="326" width="382" height="172" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1594377069697" />
-    <state width="1493" height="103" key="GridCell.Tab.0.bottom" timestamp="1600568103555">
+    <state width="1478" height="230" key="GridCell.Tab.0.bottom" timestamp="1601097345529">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="103" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600568103555" />
-    <state width="1493" height="103" key="GridCell.Tab.0.center" timestamp="1600568103555">
+    <state width="1478" height="230" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601097345529" />
+    <state width="1478" height="230" key="GridCell.Tab.0.center" timestamp="1601097345529">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="103" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600568103555" />
-    <state width="1493" height="103" key="GridCell.Tab.0.left" timestamp="1600568103555">
+    <state width="1478" height="230" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601097345529" />
+    <state width="1478" height="230" key="GridCell.Tab.0.left" timestamp="1601097345529">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="103" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600568103555" />
-    <state width="1493" height="103" key="GridCell.Tab.0.right" timestamp="1600568103555">
+    <state width="1478" height="230" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601097345529" />
+    <state width="1478" height="230" key="GridCell.Tab.0.right" timestamp="1601097345529">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="103" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600568103555" />
+    <state width="1478" height="230" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601097345529" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1598953470569">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -225,3 +225,5 @@ def main_all(request):
 #404页面
 def page_not_found(request,exception):
     return render(request, 'pubu/../templates/404.html')
+def rjkf(request):
+    return render(request, 'time/index2.html')

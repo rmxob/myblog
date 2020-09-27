@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header{
+    height: 3.7em;
+    background-color: #2a2a2a;
+    width: 100%;
+    opacity: 1;
+    max-height: 3.7em;
+    overflow: hidden;
+}
+.header_ul li{
+    position: relative;
+    left: 20%;
+    float: left;
+    list-style: none;
+    color: #ccc;
+    margin-left: 1.5em;
+    top: 1em;
+}
+.main{
+    height: 50em;
+    /*border: 1px solid red;*/
+}
+.main_header{
+    height: 15em;
+    /*border: 1px solid blue;*/
+    position: relative;
+    bottom: 100%;
+}
+video{
+	width: 100%;
+    object-fit: fill;
+    z-index: -1;
+}
+.main_header_img{
+    width: 12em;
+    height: 13em;
+    border: 1px solid yellow;
+    position: relative;
+    left: 45%;
+    top: 10%;
+}
+.main_header_img img{
+    width: 100%;
+    height: 100%;
+}
+.main_footer{
+    height: 20em;
+    /* border: 1px solid blue; */
+    position: relative;
+    bottom: 100%;
+}
+.main_footer_all{
+    position: relative;
+    width: 40%;
+    height: 10em;
+    border: seagreen;
+    top:2em;
+    left:10em;
+}
+.main_footer_font .main_footer_font_big{
+    font-size: 2.5em;
+    line-height: calc(1em + 0.5vw);
+    color: rgb(255, 255, 255);
+    transition: opacity 0.3s ease-in-out 0.6s, transform 0.4s ease-in-out 0.5s;
+}
+.main_footer_font .main_footer_smallfont{
+    font-size: 1em;
+    line-height: calc(1em + 0.5vw);
+    color: rgb(255, 255, 255);
+    transition: opacity 0.3s ease-in-out 0.6s, transform 0.4s ease-in-out 0.5s;
+}
+.main_footer_ul{
+    width: 75%;
+    position: relative;
+    height: 8em;
+    left: 10%;
+    /* border:1px solid red; */
+    top:2em;
+    background-color: rgba(0, 0, 0, 0.35);
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;
+    backdrop-filter: blur(20px);
+    padding: 0px 50px;
+    border-radius: 5px;
+    display: flex;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: justify;
+    
+}
+.main_footer_ul ul li{
+    list-style: none;
+    float: left;
+    display: block;
+    height: 100px;
+    line-height: 115px;
+    flex: 0 1 auto;
+    list-style-type: none;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 4.6em;
+}
+
+.footer{
+    background-color: black;
+    height: 200em;
+    position: relative;
+    bottom: 2.8em;
+}
+.footer_div_middle{
+    height: 30em;
+}
+.footer_div{
+    height: 30em;
+}
+.footer_div_middle_font{
+    height: 25em;
+    width: 45%;
+    margin-left: 1em;
+    margin-top: 3em;
+    float: left;
+}
+.footer_div_font_middle_title{
+    color: #fff;
+    font-size: 2.3em;
+    margin-left: 1.5em;
+}
+.footer_div_font_middle_main{
+    margin-right: 1em;
+    color: #fff;
+    font-size: 1em;
+    margin-top: 1em;
+    padding-left: 3.5em;
+    line-height: 1.6em;
+}
+.footer_div_middle_img{
+    height: 25em;
+    width: 45%;
+    margin-right:5em;
+    margin-top: 3em;
+    background:url("https://cdn2.unrealengine.com/Unreal+Engine%2Fhome%2FcourtesyofQuixel-1920x1080-d09ae5e46b84c5956e892098d5fe88b55be1bf87.jpg?resize=1&w=1000") center center / cover no-repeat;
+    float: right;
+}
+.footer_div_img{
+    height: 25em;
+    width: 45%;
+    margin-left: 1em;
+    margin-top: 3em;
+    background:  url("https://cdn2.unrealengine.com/Unreal+Engine%2Findustry%2Farchitecture%2FImageCourtesyofBuildmedia_img5-1920x1080-23d979c4e57e57c1254e5a9971aba97e21a0351d.png?resize=1&w=1000") center center / cover no-repeat;
+    float: left;
+}
+.footer_div_font{
+    height: 25em;
+    width: 45%;
+    margin-left: 50%;
+    margin-top: 5em;
+    position: absolute;
+}
+
+.footer_div_font_title{
+     color: #fff;
+    font-size: 2.3em;
+    margin-left: 0.5em;
+}
+.footer_div_font_main{
+    margin-left: 1em;
+    color: #fff;
+    font-size: 1em;
+    margin-top: 1em;
+    padding-right: 10em;
+    line-height: 1.6em;
+}
+
+.footer_div_font button{
+    text-align: center;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    max-width: 450px;
+    margin: 5px;
+    border-radius: 2px;
+    background-color: rgba(17, 17, 17, 0.1);
+    border-color: rgb(10, 175, 241);
+    color: rgb(255, 255, 255);
+    margin-left: 1em;
+    margin-top: 1em;
+    width: 12em;
+    height: 3em;
+}
+.footer_div_last_img{
+    height: 25em;
+    width: 45%;
+    margin-left: 1em;
+    margin-top: 3em;
+    background:  url("https://cdn2.unrealengine.com/Unreal+Engine%2Fhome%2FFortnite_Chapter2_KeyArt-1920x1080-7316dcf815d5bbd94ba9ae3923c6168f5bf97cd0.png?resize=1&w=1000") center center / cover no-repeat;
+    float: left;
+}
+.footer_div_middle_font button {
+    text-align: center;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    max-width: 450px;
+    margin: 5px;
+    border-radius: 2px;
+    background-color: rgba(17, 17, 17, 0.1);
+    border-color: rgb(10, 175, 241);
+    color: rgb(255, 255, 255);
+    margin-left: 3em;
+    margin-top: 1em;
+    width: 12em;
+    height: 3em;
+}
+button:hover{
+ background-color: rgb(10, 175, 241);
+}
+.last_foot{
+    width: 80%;
+    /*border: 1px solid red;*/
+    margin: auto;
+    background: url("https://cdn2.unrealengine.com/Unreal+Engine%2Fhome%2FUE_Homepage_LargeBlock_UE5_Announced_V5-1920x1021-b274acc236f5664de0eece5a74828a33d9d65371.jpg?resize=1&w=1300") center center / cover no-repeat;
+    height: 500px;
+}
+.last_foot_main{
+    width: 30%;
+    height: 30%;
+    /*border: 1px solid aqua;*/
+    position: relative;
+    top: 30%;
+    left: 15%;
+}
+.last_foot_main a{
+    font-size: 1.8em;
+}
+.last_foot_main button{
+    text-align: center;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    max-width: 450px;
+    margin: 5px;
+    border-radius: 2px;
+    background-color: rgb(10, 175, 241);
+    color: rgb(255, 255, 255);
+    margin-top: 2em;
+    width: 13.5em;
+    height: 3em;
+}

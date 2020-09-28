@@ -226,4 +226,23 @@ def main_all(request):
 def page_not_found(request,exception):
     return render(request, 'pubu/../templates/404.html')
 def rjkf(request):
-    return render(request, 'time/index2.html')
+    blog_all = MyBlog.objects.exclude(column_id=4)
+    for i in range(len(blog_all)):
+            blog_all[i].content=markdown.markdown( blog_all[i].content[0:260], extensions=[
+            'markdown.extensions.extra',
+            'markdown.extensions.codehilite',
+            'markdown.extensions.toc'
+             ])
+    blog_all=blog_all[::-1]
+    total = request.headers
+    # ua就是通过字典取值的方式拿到返回的user-agent,最后传递到pc_or_mobile.py中的ua
+    ua = total["User-Agent"]
+    # 调用pc_or_mobile.py文件里面的函数judge_pc_or_mobile开始判断
+    # 将ua的值传到该函数的参数预留项里
+    mobile = judge_pc_or_mobile(ua)
+    if not mobile:
+     return render(request, 'time/index2.html')
+    else:
+     return render(request, 'pubu/moblemain.html', {'blog_list': blog_all})
+
+    

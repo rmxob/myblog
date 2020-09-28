@@ -16,7 +16,7 @@ urlpatterns = [
     re_path('^verifycode$', views.verifycode),
     re_path('^main', views.main),
     re_path('^all$', views.main_all),
-    re_path('^rjkf$', views.rjkf),
+    re_path('^rgzn$', views.rjkf),
 ]
 
 #

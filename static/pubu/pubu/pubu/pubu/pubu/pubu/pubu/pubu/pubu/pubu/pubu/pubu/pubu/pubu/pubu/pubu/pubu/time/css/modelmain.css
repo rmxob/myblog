@@ -171,3 +171,10 @@ li{
     width: 30%;
     height: 60%;
 }
+.music{
+    position: fixed;
+    left: 1em;
+    bottom: 5em;
+    width: 20em;
+    height: 3em;
+}

@@ -1,27 +1,30 @@
 body {
-   background-color: #f0f5f7;
+    background-color: #f0f5f7;
 }
-.main{
-    width:49%;
-    top:1em;
+
+.main {
+    width: 49%;
+    top: 1em;
     margin-left: 26%;
 }
 
-ul{
+ul {
     padding: 0;
     margin: 0;
 
 }
 
-li{
+li {
     list-style: none;
 }
-.sort_ul{
+
+.sort_ul {
     float: left;
-    padding-left: 10% ;
+    padding-left: 10%;
     padding-bottom: 15%;
 }
-.main_title{
+
+.main_title {
     height: 10%;
     font-size: 20px;
     font-weight: 700;
@@ -30,7 +33,7 @@ li{
     margin-top: 4em;
 }
 
-.main_time{
+.main_time {
     position: absolute;
     top: 0;
     left: 2px;
@@ -40,24 +43,27 @@ li{
     border-radius: 100px;
     color: #fff;
     background: #97dffd;
-    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
 }
-.form-search{
+
+.form-search {
 
     width: 50%;
     position: relative;
     left: 24%;
-    top:8px;
+    top: 8px;
 }
-.search-input{
-    border: 1px solid hsla(0,0%,100%,0);
+
+.search-input {
+    border: 1px solid hsla(0, 0%, 100%, 0);
     border-radius: 2px;
     background-color: #fff;
     height: 2.5em;
     width: 28em;
 }
-.search-btn{
+
+.search-btn {
     border: none;
     background: #e7e7e7;
     cursor: pointer;
@@ -67,16 +73,18 @@ li{
     right: 0.3em;
     bottom: 0.1em;
 }
-.search-btn img{
+
+.search-btn img {
 
     width: 70%;
     height: 70%;
 }
-.main_label{
+
+.main_label {
     position: absolute;
     border-color: #97dffd;
-    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
     background-color: #97dffd;
     margin: 5px 0 15px 2px;
     font-size: 14px;
@@ -88,15 +96,17 @@ li{
     top: 5em;
 }
 
-.main_time span{
+.main_time span {
     text-align: center;
     display: block;
 }
-.main_time .day{
-       font-size: 22px;
+
+.main_time .day {
+    font-size: 22px;
     font-weight: 700;
 }
-.main_label::after{
+
+.main_label::after {
     position: absolute;
     content: "";
     top: 100%;
@@ -110,7 +120,8 @@ li{
     width: 0;
     height: 0;
 }
-.article{
+
+.article {
     width: 100%;
     padding: 0px 10px 20px 10px;
     border: 1px solid #EBEEF5;
@@ -120,38 +131,44 @@ li{
     border-radius: 20px;
 
 }
-.article .main_title span{
+
+.article .main_title span {
 
 }
-.main_authorinfo{
+
+.main_authorinfo {
     height: 6%;
     /*border: 1px solid red;*/
     margin-top: 0.5em;
     text-align: center;
 }
-.main_authorinfo img{
+
+.main_authorinfo img {
     width: 3%;
     height: 100%;
 }
 
-.article .main_content{
+.article .main_content {
     width: 100%;
     height: 60%;
     /*border: 1px solid yellow;*/
 }
-.footer_back{
+
+.footer_back {
     width: 100%;
     height: 10em;
     position: relative;
 
 }
-.footer_back .blog{
+
+.footer_back .blog {
     text-align: center;
     position: relative;
     top: 6em;
-    border-top: 1px solid rgba(0,0,0,.125);;
+    border-top: 1px solid rgba(0, 0, 0, .125);;
 }
-.readall{
+
+.readall {
     position: absolute;
     width: 10%;
     height: 1.5em;
@@ -167,14 +184,49 @@ li{
     text-decoration: none;
     padding-top: 0.1em;
 }
-.main_content img{
+
+.main_content img {
     width: 30%;
     height: 60%;
 }
-.music{
+
+.music {
     position: fixed;
     left: 1em;
     bottom: 5em;
     width: 20em;
     height: 3em;
+}
+
+.callme {
+    width: 3em;
+    height: 7em;
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+}
+
+.callme img {
+    width: 100%;
+    height: 50%;
+}
+.callme_for_qq{
+    width: 15em;
+    height: 15em;
+    position: fixed;
+    right: 5em;
+    bottom: 5em;
+    display: none;
+}
+.callme_for_qq img{
+    width: 100%;
+    height: 100%;
+}
+.callme_for_wechat{
+    width: 15em;
+    height: 15em;
+    position: fixed;
+    right: 5em;
+    bottom: 4em;
+    display: none;
 }

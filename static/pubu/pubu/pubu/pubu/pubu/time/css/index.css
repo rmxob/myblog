@@ -13,9 +13,15 @@ a{
     opacity: 1;
     max-height: 3.7em;
     overflow: hidden;
+    position: relative;
 }
 .main{
     position: relative;
+ 
+}
+.header_ul{
+    position: relative;
+    left: 8%;
 }
 .header_ul li{
     position: relative;
@@ -24,7 +30,7 @@ a{
     list-style: none;
     color: #ccc;
     margin-left: 1.5em;
-    top: 1em;
+    top: 1.25em;
 }
 video{
     width: 100%;
@@ -48,10 +54,12 @@ video{
     position: absolute;
     top: 45%;
     left:20%;
+
 }
 .idt{
     height: 60%;
     /* border: 1px solid blueviolet; */
+ 
 }
 p{
     color: #fff;
@@ -59,16 +67,43 @@ p{
 }
 .idt1{
     font-size: 2.5em;
+
 }
 .idt2{
    font-size: 1.2em;
    padding-right: 40%;
    margin-top: 2%;
-   
+ 
+}
+.null{
+    width: 28%;
+    /* border: 1px solid red; */
+    position: absolute;
+}
+.img1{
+    width: 10%;
+    /* border: 1px solid rosybrown; */
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.img1 img{
+    width: 70%;
+}
+.img2{
+    width: 80%;
+    /* border: 1px solid blue; */
+    float: right;
+    position: relative;
+    bottom:3em;
+  
+}
+.img2 img{
+    width: 70%;
+    height: 70%;
 }
 .idt button{
-    width: 15%;
-    height: 15%;
+    width: 17%;
+    height: 17%;
     background-color: #0aaff1;;
     border-radius: 4px;
     color: #fff;
@@ -85,11 +120,11 @@ p{
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;
     backdrop-filter: blur(20px);
-    margin-top: 5%;
+    margin-top: 8%;
 }
 .idt_url li{
     position: relative;
-    left: 20%;
+    left: 15%;
     float: left;
     list-style: none;
     color: #ccc;

@@ -112,7 +112,7 @@ p{
     font-size: 1.2em;
 }
 .top_url{
-    height: 20%;
+    height:150px;
     background-color: rgba(0, 0, 0, 0.35);
     width: 100%;
     opacity: 1;
@@ -124,16 +124,22 @@ p{
 }
 .idt_url li{
     position: relative;
-    left: 15%;
+    left: 5%;
     float: left;
     list-style: none;
     color: #ccc;
-    margin-left: 5%;
-    margin-top: 2.5%;
     font-size: 1.2em;
     transition: color 200ms ease-out 0s;
     z-index: 5;
+    display: block;
+    width: 15%;
+    line-height:95px;
+    text-align: center;
 }
+.idt_url li:hover{
+    border-bottom :5px solid rgb(10, 175, 241);
+}
+
 /* 视频下介绍 */
 .main_middle{
     background-color:black;

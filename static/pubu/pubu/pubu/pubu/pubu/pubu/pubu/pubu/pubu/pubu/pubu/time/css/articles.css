@@ -115,7 +115,6 @@ img{
 .sort_span{
     width: 100%;
     border-bottom: 1px solid #e1e8ed;
-
 }
 .aboutme,.sort{
     background-color: white;
@@ -223,7 +222,7 @@ img{
     top: -286px;
     z-index: 99;
     width: 70px;
-    height: 900px;
+    height: 800px;
     -webkit-transition: all .5s ease-in-out .3s;
     transition: all .5s ease-in-out .3s;
     cursor: pointer;

@@ -35,7 +35,7 @@ span{
     height: 100%;
 } 
 .header_font{
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
   text-align: center;
 }
 .header_font h1{

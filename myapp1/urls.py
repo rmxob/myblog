@@ -17,6 +17,7 @@ urlpatterns = [
     re_path('^main', views.main),
     re_path('^all$', views.main_all),
     re_path('^rgzn$', views.rjkf),
+    re_path('^joinus', views.joinus),
 ]
 
 #

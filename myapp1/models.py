@@ -45,4 +45,8 @@ class MyBlog(models.Model):
         verbose_name = "我的博客"
         verbose_name_plural = verbose_name
 
-
+class Joinus(models.Model):
+    name = models.CharField(u'姓名', max_length=130)
+    Class = models.CharField(u'班级', max_length=130)
+    institute = models.CharField(u'学院', max_length=130)
+    number=models.IntegerField(u'学号')

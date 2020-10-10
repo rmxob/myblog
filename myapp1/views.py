@@ -243,6 +243,18 @@ def rjkf(request):
     if not mobile:
      return render(request, 'time/index2.html')
     else:
-     return render(request, 'pubu/moblemain.html', {'blog_list': blog_all})
-
-    
+     return render(request, 'time/mobile.html')
+def joinus(request):
+    name= request.GET.get('name')
+    Class=request.GET.get('Class')
+    institute=request.GET.get('institute')
+    number=request.GET.get('number')
+    student =Joinus()
+    student.name=name
+    student.Class=Class
+    student.institute=institute
+    student.number=number
+    student.save()
+    return HttpResponse(json.dumps({
+        "status":'success'
+    }))

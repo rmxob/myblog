@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <link href="{% static 'time/css/mobile.css' %}" rel="stylesheet">
+    <script src={% static 'layer-v3.1.1/layer-v3.1.1/layer/layer.js' %}></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'time/css/user_layer.css' %}">
+    <title>VR虚拟现实</title>
+    <script>
+        window.onload = function () {
+            var btn = document.getElementById("btn1");
+            btn.onclick = function () {
+                var name = $("#name").val();
+                var Class = $("#class").val();
+                var number = $("#number").val();
+                var institute= $("#institute").val();
+                var number1=Number(number);
+                if(!(name && Class && number && institute))
+                {
+                    layer.msg('请输入完整的信息', {time: 3000});
+                }
+                if(isNaN(number1))
+                {
+                     layer.msg('请输入正确的学号', {time: 3000});
+                }
+                else{
+                 $.ajax({
+                        url: '/joinus/',
+                        type: "GET",
+                        async : false,
+                        data: {
+                            'name':name,
+                            'Class':Class,
+                            'number':number,
+                            'institute':institute,
+                        },
+                        success: function (result) {
+                            layer.msg('提交成功', {time: 3000});
+                        }
+                    });
+                    }
+
+            }
+        }
+    </script>
+</head>
+<body>
+<a name="Back">
+    <div class="header">
+        <img src="https://i.loli.net/2020/10/03/9XHdp4bOFnChyva.jpg" alt="">
+        <!-- <video src="video\What are words.mp4" muted autoplay loop></video> -->
+        <div class="header_font">
+            <h1 style="color: aliceblue;">人工智能工作室</h1>
+            <p>人工智能开发工作室成立于2020年9月，是一个集算法，web开发，人工智能技术为一体的工作室。这里聚集着各个学院的大佬。期待萌新的加入</p>
+        </div>
+        <div class="btn"><span>开始探索</span></div>
+    </div>
+</a>
+<div class="content">
+    <h2>VR虚拟现实开发工作室</h2>
+    <p>啊实打实大所多撒大所大所多所</p>
+</div>
+
+<div class="Mid_body">
+    <div>
+        <h1>“优越的地理位置与独特的风景线”</h1>
+    </div>
+    <a href="#"><span>工作室位于学校南阳实训大楼十层，风景优美，上下方便。距离指导老师办公室较近</span></a>
+    <img src="https://i.loli.net/2020/10/03/DM8LpfKFbQYROAc.png" alt="">
+</div>
+<div class="Low_body">
+    <div class="fis_img">
+        <img src="https://i.loli.net/2020/10/03/BfnPHkICpoXQhd7.png" alt=""></div>
+    <div class="font_1">
+        <p>刚进入大学有些许迷茫吗？学长学姐一对一指点迷津!</p>
+        <span>工作室学长学姐均曾经过层层选拔，超高的技术与能力带你快速入门学习新技术。</span>
+    </div>
+</div>
+<div class="sec_img">
+    <img src="https://i.loli.net/2020/10/03/DC2HkRUVLmGc1aE.png" alt=""></div>
+<div class="font_2">
+    <p>学习方向多样化</p>
+    <span>如若你对算法感兴趣这里有<a href="#">专属oj</a>刷题；如若你对web开发感兴趣，这边有精通<a href="#">java,c#,.net(c#),python</a>的学长学姐手把手带你做项目；
+         如果你对人工智能感兴趣 <a href="#">这边有精通深度学习的指导老师王博士带你深入了解pytorch与tenserflow</a>；学习方向多种多样，只要你有想法，肯努力，人工智能工作室欢迎你的加入！</span>
+</div>
+</div>
+</div>
+
+<div class="foot_fir">
+    <p>人工智能工作室欢迎南阳理工学院各学院20级新生加入</p>
+    <img src="https://i.loli.net/2020/10/03/vIcnzHZdAeaYENg.png" alt="">
+</div>
+<div class="foot_sec">
+    <div class="thi_img">
+        <img src="https://i.loli.net/2020/10/03/Na6XZIVqFAnd1jo.png" alt=""></div>
+    <div class="font_3">
+        <p>人工智能工作室斩奖无数</p>
+        <span>包括但不限于蓝桥杯，计算机应用大赛，传智杯，微信小程序大赛等等等等获奖无数</span>
+    </div>
+</div>
+<div class="fou_img">
+    <img src="https://i.loli.net/2020/10/03/AIQ6uTUJLMq52Cm.png" alt=""></div>
+<div class="font_4">
+    <p>成为大牛的机会就放在你的面前</p>
+    <span>学习行业领先的技术。掌握适用于各行各业的技术和知识，开拓自己的职业生涯。从入门到精通，这里成就你的未来！
+        </span>
+</div>
+</div>
+</div>
+<div class="foot_end">
+    <div class="end_left">
+        <p>立即开始</p>
+        <div class="btu">
+            <div class="dropdown">
+                <a href="#" style="text-decoration: none;"><span>自主学习</span></a>
+                <div class="dropdown-content">
+                    <a href="https://www.runoob.com/html" target="_block"><p>菜鸟教程</p></a>
+                    <a href="https://www.w3school.com.cn/index.html" target="_block"><p>W3School</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="end_right">
+        <div class="wavy">
+            <span style="--i:1">加</span>
+            <span style="--i:2">入</span>
+            <span style="--i:3">我</span>
+            <span style="--i:4">们</span>
+        </div>
+            <div class="key">
+                <input type="text" placeholder="姓名" id="name">
+                <input type="text" placeholder="学号" id="number">
+                <input type="text" placeholder="班级" id="class">
+                <input type="text" placeholder="学院" id="institute">
+            </div>
+            <div class="button">
+                <button class="btn1" type="submit" id="btn1"><p>提交信息</p></button>
+            </div>
+    </div>
+</div>
+</body>
+</html>
+

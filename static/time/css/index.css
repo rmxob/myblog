@@ -1,12 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+    margin: 0px;
+    padding: 0px;
 }
-a{
+
+li {
+    list-style: none;
+}
+
+a {
     text-decoration: none;
     color: white;
 }
-.header{
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
     height: 3.7em;
     background-color: #2a2a2a;
     width: 100%;
@@ -15,15 +26,18 @@ a{
     overflow: hidden;
     position: relative;
 }
-.main{
+
+.main {
     position: relative;
- 
+
 }
-.header_ul{
+
+.header_ul {
     position: relative;
     left: 8%;
 }
-.header_ul li{
+
+.header_ul li {
     position: relative;
     left: 20%;
     float: left;
@@ -31,88 +45,103 @@ a{
     color: #ccc;
     margin-left: 1.5em;
     top: 1.25em;
+    display: block;
+    font-size: 1vw;
 }
-video{
+
+video {
     width: 100%;
     height: 90%;
     z-index: -100;
     position: relative;
 }
 
-.top_logo{
+.top_logo {
     width: 10%;
-    height:15%;
+    height: 15%;
     /* border: 1px solid blue; */
     position: absolute;
     top: 10%;
     left: 45%;
 }
-.top_idt{
+
+.top_idt {
     height: 40%;
     width: 60%;
     /* border: 1px solid red; */
     position: absolute;
     top: 45%;
-    left:20%;
+    left: 20%;
 
 }
-.idt{
+
+.idt {
     height: 60%;
     /* border: 1px solid blueviolet; */
- 
+
 }
-p{
+
+p {
     color: #fff;
     padding-left: 10%;
 }
-.idt1{
-    font-size: 2.5em;
+
+.idt1 {
+    font-size: 2.5vw;
 
 }
-.idt2{
-   font-size: 1.2em;
-   padding-right: 40%;
-   margin-top: 2%;
- 
+
+.idt2 {
+    font-size: 1.2vw;
+    padding-right: 40%;
+    margin-top: 2%;
+
 }
-.null{
+
+.null {
     width: 28%;
     /* border: 1px solid red; */
     position: absolute;
 }
-.img1{
+
+.img1 {
     width: 10%;
     /* border: 1px solid rosybrown; */
     margin-left: 5%;
     margin-top: 3%;
 }
-.img1 img{
+
+.img1 img {
     width: 70%;
 }
-.img2{
+
+.img2 {
     width: 80%;
     /* border: 1px solid blue; */
     float: right;
     position: relative;
-    bottom:3.5em;
-  
+    bottom: 3.5em;
+
 }
-.img2 img{
+
+.img2 img {
     width: 70%;
     height: 70%;
 }
-.idt button{
-    width: 17%;
-    height: 17%;
+
+.idt button {
+    width: 20%;
+    height: 20%;
     background-color: #0aaff1;;
     border-radius: 4px;
     color: #fff;
     margin-left: 10%;
     margin-top: 2%;
-    font-size: 1.2em;
+    font-size: 1.2vw;
 }
-.top_url{
-    height:150px;
+
+.top_url {
+    height: 150px;
     background-color: rgba(0, 0, 0, 0.35);
     width: 100%;
     opacity: 1;
@@ -122,64 +151,69 @@ p{
     backdrop-filter: blur(20px);
     margin-top: 8%;
 }
-.idt_url li{
+
+.idt_url li {
     position: relative;
-    left: 5%;
+    left: 12%;
     float: left;
     list-style: none;
     color: #ccc;
-    font-size: 1.2em;
+    font-size: 1.3vw;
     transition: color 200ms ease-out 0s;
     z-index: 5;
     display: block;
     width: 15%;
-    line-height:95px;
+    line-height: 95px;
     text-align: center;
 }
-.idt_url li:hover{
-    border-bottom :5px solid rgb(10, 175, 241);
+
+.idt_url li:hover {
+    border-bottom: 5px solid rgb(10, 175, 241);
 }
 
 /* 视频下介绍 */
-.main_middle{
-    background-color:black;
-    border-top: 2% solid #2a2a2a;
-    margin-top: -0.5%;
-    height: 400em;
+.main_middle {
+    background-color: black;
+    border: 2px  solid black;
+    margin-top: -1em;
 }
-.main_middle_first_img{
+
+.main_middle_first_img {
     height: 80%;
     width: 45%;
     margin-left: 1em;
     margin-top: 2em;
-    background:  url("https://cdn2.unrealengine.com/Unreal+Engine%2Findustry%2Farchitecture%2FImageCourtesyofBuildmedia_img5-1920x1080-23d979c4e57e57c1254e5a9971aba97e21a0351d.png?resize=1&w=1000") center center / cover no-repeat;
+    background: url("https://cdn2.unrealengine.com/Unreal+Engine%2Findustry%2Farchitecture%2FImageCourtesyofBuildmedia_img5-1920x1080-23d979c4e57e57c1254e5a9971aba97e21a0351d.png?resize=1&w=1000") center center / cover no-repeat;
     float: left;
 }
-.main_middle_first{
-    height:45em;
-    /* border: 1px solid orange; */
+
+.main_middle_first {
+    height: 500px;
+    width: 100%;
 }
-.main_middle_first_font{
-    height: 40em;
+
+.main_middle_first_font {
+    height: 80%;
     width: 45%;
-    margin-left: 50%;
-    margin-top: 5em;
-    position: absolute;
+    /*border: 1px solid blue;*/
+    float: right;
+    margin-top: 2em;
+    margin-right: 5%;
 }
-.main_middle_first_title{
+
+.main_middle_first_title {
     color: #fff;
-   font-size: 2.3em;
-   margin-left: 0.5em;
+    font-size: 2.3vw;
 }
-.main_middle_first_main{
-   margin-left: 1em;
-   color: #fff;
-   font-size: 1em;
-   margin-top: 1em;
-   padding-right: 20em;
-   line-height: 1.6em;
+
+.main_middle_first_main {
+    color: #fff;
+    font-size: 1.1vw;
+    margin-top: 1em;
+    line-height: 1.6em;
 }
-.main_middle_first_font button{
+
+.main_middle_first_font button {
     text-align: center;
     font-size: 1.1em;
     letter-spacing: 1px;
@@ -189,45 +223,50 @@ p{
     background-color: rgba(17, 17, 17, 0.1);
     border-color: rgb(10, 175, 241);
     color: rgb(255, 255, 255);
-    margin-left:7.5em;
+    margin-left: 3.5em;
     margin-top: 1em;
     width: 12em;
     height: 3em;
 }
-.main_middle_first_font button:hover{
+
+.main_middle_first_font button:hover {
     background-color: rgb(10, 175, 241);;
 }
 
 
-.main_middle_second_font{
+.main_middle_second_font {
     height: 25em;
     width: 45%;
     margin-left: 1em;
     margin-top: 3em;
     float: left;
 }
-.main_middle_second_title{
+
+.main_middle_second_title {
     color: #fff;
     font-size: 2.3em;
     margin-left: 1.5em;
 }
-.main_middle_second_main{
+
+.main_middle_second_main {
     margin-right: 1em;
     color: #fff;
-    font-size: 1em;
+    font-size: 1.1vw;
     margin-top: 1em;
     padding-left: 15%;
     line-height: 1.6em;
 }
-.main_middle_second_img{
+
+.main_middle_second_img {
     height: 80%;
     width: 45%;
-    margin-right:5em;
+    margin-right: 5em;
     margin-top: 3em;
-    background:url("https://cdn2.unrealengine.com/Unreal+Engine%2Fhome%2FcourtesyofQuixel-1920x1080-d09ae5e46b84c5956e892098d5fe88b55be1bf87.jpg?resize=1&w=1000") center center / cover no-repeat;
+    background: url("https://cdn2.unrealengine.com/Unreal+Engine%2Fhome%2FcourtesyofQuixel-1920x1080-d09ae5e46b84c5956e892098d5fe88b55be1bf87.jpg?resize=1&w=1000") center center / cover no-repeat;
     float: right;
 }
-.main_middle_second_font button{
+
+.main_middle_second_font button {
     text-align: center;
     font-size: 1.1em;
     letter-spacing: 1px;
@@ -242,37 +281,41 @@ p{
     width: 12em;
     height: 3em;
 }
-.main_middle_last_img{
+
+.main_middle_last_img {
 
     height: 80%;
     width: 45%;
     margin-left: 1em;
     margin-top: 2em;
-   background:  url("https://cdn2.unrealengine.com/Unreal+Engine%2Fhome%2FFortnite_Chapter2_KeyArt-1920x1080-7316dcf815d5bbd94ba9ae3923c6168f5bf97cd0.png?resize=1&w=1000") center center / cover no-repeat;
+    background: url("https://cdn2.unrealengine.com/Unreal+Engine%2Fhome%2FFortnite_Chapter2_KeyArt-1920x1080-7316dcf815d5bbd94ba9ae3923c6168f5bf97cd0.png?resize=1&w=1000") center center / cover no-repeat;
     float: left;
 }
-.last_foot{
+
+.last_foot {
     width: 45%;
     /* border: 1px solid red; */
     margin: auto;
     background: url("https://cdn2.unrealengine.com/Unreal+Engine%2Fhome%2FUE_Homepage_LargeBlock_UE5_Announced_V5-1920x1021-b274acc236f5664de0eece5a74828a33d9d65371.jpg?resize=1&w=1300") center center / cover no-repeat;
     height: 500px;
-    margin-top: 10%;
     position: relative;
 
 }
-.last_foot_main{
+
+.last_foot_main {
     width: 30%;
     /* border: 1px solid aqua; */
     position: relative;
     top: 30%;
     left: 15%;
 }
-.last_foot_main a{
+
+.last_foot_main a {
     font-size: 1.8em;
-    white-space:nowrap;  
+    white-space: nowrap;
 }
-.last_foot_main button{
+
+.last_foot_main button {
     text-align: center;
     font-size: 1.1em;
     letter-spacing: 1px;
@@ -284,4 +327,133 @@ p{
     margin-top: 2em;
     width: 13.5em;
     height: 3em;
+}
+
+.footer {
+    height: 400px;
+    background: #2a2a2a;
+    z-index: -1;
+    border-top: 0.5px solid #2a2a2a;
+}
+
+.icos {
+    width: 12%;
+    height: 10%;
+    /*border: 1px solid orange;*/
+    margin-left: 3%;
+    margin-top: 2%;
+
+}
+
+.icos img {
+    width: 20%;
+    height: 100%;
+    margin-left: 2%;
+}
+
+.team {
+    width: 20%;
+    height: 50%;
+    /*border: 1px solid yellowgreen;*/
+    margin-left: 3%;
+    margin-top: 2%;
+    color: #fff;
+}
+
+.team ul li {
+    float: left;
+    margin-left: 3%;
+}
+
+.end {
+    height: 10%;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top: 16%;
+}
+
+.end .p {
+    color: #fff;
+    font-size: 0.5vw;
+}
+
+.goup {
+    position: absolute;
+    right: 2%;
+    width: 3%;
+    height: 6%;
+}
+
+/* 报名弹出框 */
+.frame {
+    width: 500px;
+    height: 450px;
+}
+
+.wavy {
+    text-align: center;
+    margin: 0 0;
+    -webkit-box-reflect: below -2px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+    position: relative;
+}
+
+.wavy span {
+    margin-top: 15px;
+    position: relative;
+    font-size: 40px;
+    display: inline-block;
+    animation: mywavy 1.5s ease-in-out infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes mywavy {
+    0% {
+        transform: translateY(0PX);
+    }
+    20% {
+        transform: translateY(-24PX);
+    }
+    40%, 100% {
+        transform: translateY(0PX);
+    }
+}
+
+.key {
+    width: 30%;
+    margin: 9% 30%;
+}
+
+.key input {
+    width: 250px;
+    height: 60px;
+    border: 1px black solid;
+    border-radius: 3%;
+    margin-top: 3px;
+    margin-left: -55px;
+    background: none;
+}
+
+input::-webkit-input-placeholder {
+    color: darkgrey;
+    text-align: center;
+}
+
+.btn1 {
+    padding-bottom: 3px;
+    margin-top: -30px;
+    margin-left: 35%;
+    /*border: dodgerblue 1px solid;*/
+    width: 120px;
+    height: 30px;
+    background: #5E5E5E;
+    font-color: white;
+    text-align: center;
+}
+.orb img{
+    width: 100%;
+    height: 100%;
+}
+.orb{
+
 }

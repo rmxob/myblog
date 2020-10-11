@@ -18,17 +18,27 @@
                 var Class = $("#class").val();
                 var number = $("#number").val();
                 var institute = $("#institute").val();
-                var direction=$("direction").val();
+                var direction=$("#direction").val();
                 var number1 = Number(number);
                 var list=['VR虚拟现实','web开发','人工智能算法'
                 ]
-                if (!(name && Class && number && institute&& direction)) {
+                if (!(name && Class && number && institute && direction)) {
                     layer.msg('请输入完整的信息', {time: 3000});
                 }
-                if (!direction in list){
-                    layer.msg('方向包括\'VR虚拟现实\',\'web开发\',\'人工智能算法\'', {time: 3000});
+                var x=false
+                for(var i=0;i<list.length;i++)
+                {
+                    if (list[i]==direction)
+                    {
+                        x=true
+                    }
                 }
-                else if (isNaN(number1)) {
+                if(!x)
+                {
+                    layer.msg('请输入正确的方向,包括VR虚拟现实,web开发,人工智能算法', {time: 5000});
+                }
+                else{
+                     if (isNaN(number1)) {
                     layer.msg('请输入正确的学号', {time: 3000});
                 } else {
                     $.ajax({
@@ -40,12 +50,15 @@
                             'Class': Class,
                             'number': number,
                             'institute': institute,
+                            'direction':direction,
                         },
                         success: function (result) {
                             layer.msg('提交成功', {time: 3000});
                         }
                     });
                 }
+                }
+
             }
         }
     </script>

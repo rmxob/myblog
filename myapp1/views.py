@@ -249,11 +249,13 @@ def joinus(request):
     Class=request.GET.get('Class')
     institute=request.GET.get('institute')
     number=request.GET.get('number')
+    direction=request.GET.get('direction')
     student =Joinus()
     student.name=name
     student.Class=Class
     student.institute=institute
     student.number=number
+    student.direction=direction
     student.save()
     return HttpResponse(json.dumps({
         "status":'success'

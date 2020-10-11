@@ -18,11 +18,17 @@
                 var Class = $("#class").val();
                 var number = $("#number").val();
                 var institute = $("#institute").val();
+                var direction=$("direction").val();
                 var number1 = Number(number);
-                if (!(name && Class && number && institute)) {
+                var list=['VR虚拟现实','web开发','人工智能算法'
+                ]
+                if (!(name && Class && number && institute&& direction)) {
                     layer.msg('请输入完整的信息', {time: 3000});
                 }
-                if (isNaN(number1)) {
+                if (!direction in list){
+                    layer.msg('方向包括\'VR虚拟现实\',\'web开发\',\'人工智能算法\'', {time: 3000});
+                }
+                else if (isNaN(number1)) {
                     layer.msg('请输入正确的学号', {time: 3000});
                 } else {
                     $.ajax({
@@ -40,7 +46,6 @@
                         }
                     });
                 }
-
             }
         }
     </script>

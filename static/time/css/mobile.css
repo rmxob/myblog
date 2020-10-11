@@ -5,7 +5,6 @@
 body{
     height: auto;
     background:black;
-  
 }
 a{
     text-decoration: none;
@@ -27,12 +26,12 @@ span{
     height: auto;
     z-index: -1;
 }  */
-.header img{
+.header video{
     position: absolute;
     object-fit: cover;
     z-index: -1;
     width: 100%;
-    height: 100%;
+    height: 42%;
 } 
 .header_font{
   /*border: 1px solid blue;*/
@@ -56,11 +55,14 @@ span{
       padding:6px 20px;
       margin: 8% 35%;
       background-color: deepskyblue;
+    position: relative;
   }
 .btn span{
       color: white;
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
   }
-
 .content h2{
       color: white;
       text-align: center;
@@ -196,7 +198,7 @@ span{
   .foot_end{
     background-color: #fff;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 200px;
     float: none;
     justify-content: center;
     align-items: center;
@@ -210,7 +212,7 @@ span{
   .foot_end .end_right{
     background-color: #777777;
     width: 100%;
-    height:  450px;
+    height:  500px;
     position: relative;
     float: right;
   }
@@ -292,9 +294,72 @@ input::-webkit-input-placeholder{
   position:absolute;
   margin-top: -20px;
   margin-left: 35%;
-  border: dodgerblue 1px solid;
+  /*border: dodgerblue 1px solid;*/
   width: 120px;
   height: 30px;
   background:#5E5E5E;
-  font: white;
+  font-color: white;
   }
+.header_swiper{
+    width: 100%;
+    height: 800px;
+    border: 1px solid red;
+}
+.all{
+    width: 100%;
+    height: 1500px;
+    /*border: 1px solid red;*/
+}
+.main_middle_first_img {
+    height: 50%;
+    width: 80%;
+    margin-left: 2.5em;
+    margin-top: 3.5em;
+    background: url("https://cdn2.unrealengine.com/Unreal+Engine%2Findustry%2Farchitecture%2FImageCourtesyofBuildmedia_img5-1920x1080-23d979c4e57e57c1254e5a9971aba97e21a0351d.png?resize=1&w=1000") center center / cover no-repeat;
+
+}
+
+.main_middle_first {
+    height: 500px;
+    width: 100%;
+}
+.main_middle_first_font {
+    /*border: 1px solid red;*/
+    height: 30%;
+    width: 100%;
+    /*border: 1px solid blue;*/
+   text-align: center;
+}
+
+.main_middle_first_title {
+    color: #ff2f68;;
+    font-size: 8.3vw;
+}
+
+.main_middle_first_main {
+    color: #fff;
+    font-size: 3.8vw;
+    margin-top: 1em;
+    padding-left: 2%;
+    padding-right:2%;
+}
+
+.main_middle_first_font button {
+    text-align: center;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    max-width: 450px;
+    margin: 5px;
+    border-radius: 2px;
+    background-color: rgba(17, 17, 17, 0.1);
+    border-color: rgb(10, 175, 241);
+    color: rgb(255, 255, 255);
+    margin-top: 1em;
+    width: 10em;
+    height: 3em;
+}
+
+.main_middle_first_font button:hover {
+    background-color: rgb(10, 175, 241);;
+}
+

@@ -50,3 +50,4 @@ class Joinus(models.Model):
     Class = models.CharField(u'班级', max_length=130)
     institute = models.CharField(u'学院', max_length=130)
     number=models.IntegerField(u'学号')
+    direction=models.CharField(u'方向',default='不清楚',max_length=130)

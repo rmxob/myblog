@@ -93,7 +93,7 @@
             <h3><span class="aboutus_guanyu animate__animated animate__fadeInUp">关于我们</span></h3>
             <h3><span class="aboutus_font">about us</span></h3>
         <div class="xuanyan">
-            <h4 style="line-height: 35px;font-size: 20px; padding-left: 0.5em" class="animate__animated animate__flipInX">
+            <h4 style="line-height: 35px;font-size: 15px; padding-left: 0.5em" class="animate__animated animate__flipInX">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 一个大家庭，一群来自五湖四海，性格迥异的人，虽然年龄，专业不尽相同，但一样的是那颗青春奋斗的心，坚持，奋斗，提升，传承的精神镌刻在每一个成员的心中，我们期待每一个志同道合的“你”的加入。
             </h4>
@@ -183,20 +183,7 @@
 </div>
 </body>
 <script>
-      var mySwiper = new Swiper ('.swiper-container', {
-    on:{
-      init: function(){
-        swiperAnimateCache(this); //隐藏动画元素
-        swiperAnimate(this); //初始化完成开始动画
-      },
-      slideChangeTransitionEnd: function(){
-        swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
-        //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
-      }
-    }
-  })
     var mySwiper = new Swiper('.swiper-container', {
-
         loop: true, // 循环模式选项
         // 如果需要分页器
         pagination: {

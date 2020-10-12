@@ -399,34 +399,34 @@ h2 h3{
     background-color: white;
 }
 .aboutus  h2{
-    font-size: 2em;
+    font-size: 1.5em;
     letter-spacing: 2px;
     color: #292929;
     font-weight: 400;
     text-transform: capitalize;
     text-shadow: 2px 2px 3px #8a8686;
     line-height: 1.7em;
-    margin-left: 1.1em;
+    margin-left: 2em;
 }
 .aboutus_font{
-    font-size:2em;
+    font-size:1.5em;
     letter-spacing: 2px;
     color: #292929;
     font-weight: 400;
     text-transform: capitalize;
     text-shadow: 2px 2px 3px #8a8686;
     line-height: 1.7em;
-    margin-left: 3.6em;
+    margin-left: 5.1em;
 }
 .aboutus_guanyu {
     display: inline-block;
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 2em;
     font-family: 'Montez', cursive;
     color: #166bea;
     text-transform: capitalize;
     text-shadow: 2px 2px 3px #8a8686;
-    margin-left: 1.5em;
+    margin-left: 2.5em;
 }
 .xuanyan button{
      text-align: center;
@@ -463,7 +463,7 @@ h2 h3{
     margin: 1.3em 0;
 }
 .direction_intro{
-    font-size: 2.8em;
+    font-size: 2em;
     color: white;
     line-height: 51px;
     text-align: left;
@@ -485,8 +485,4 @@ h2 h3{
 }
 .main_middle_first ul li{
     float: left;
-}
-ul li img{
-    width: 20%;
-    height: 20%;
 }

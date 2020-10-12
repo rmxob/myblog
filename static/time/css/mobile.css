@@ -17,8 +17,17 @@ span{
 }
 .header{
     width: 100%;
-    overflow: hidden;
+    height: 300px;
 }
+.header img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-container{
+    width: 100%;
+    height: 300px;
+}
+
 /* .header video{
     position: absolute;
     object-fit: cover;
@@ -198,7 +207,7 @@ span{
   .foot_end{
     background-color: #fff;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 366px;
     float: none;
     justify-content: center;
     align-items: center;
@@ -311,42 +320,46 @@ input::-webkit-input-placeholder{
     /*border: 1px solid red;*/
 }
 .main_middle_first_img {
-    height: 50%;
-    width: 80%;
-    margin-left: 2.5em;
-    margin-top: 3.5em;
-    background: url("https://cdn2.unrealengine.com/Unreal+Engine%2Findustry%2Farchitecture%2FImageCourtesyofBuildmedia_img5-1920x1080-23d979c4e57e57c1254e5a9971aba97e21a0351d.png?resize=1&w=1000") center center / cover no-repeat;
-
-}
-
-.main_middle_first {
-    height: 500px;
+    height: 30%;
     width: 100%;
+    background: url("https://cdn2.unrealengine.com/Unreal+Engine%2Findustry%2Farchitecture%2FImageCourtesyofBuildmedia_img5-1920x1080-23d979c4e57e57c1254e5a9971aba97e21a0351d.png?resize=1&w=1000") center center / cover no-repeat;
+}
+.main_middle_first {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2em;
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 1px 1px 17px #1b1b1b;
+    margin-top: 2em;
+    position: relative;
 }
 .main_middle_first_font {
     /*border: 1px solid red;*/
     height: 30%;
     width: 100%;
-    /*border: 1px solid blue;*/
-   text-align: center;
 }
 
 .main_middle_first_title {
-    color: #ff2f68;;
-    font-size: 8.3vw;
+    font-size: 7.3vw;
+    letter-spacing: 0.5px;
+    color: #ff2f68;
+    font-family: 'Montez', cursive;
+    text-transform: capitalize;
+}
+.main_middle_first_main {
+    margin-top: 1em;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #a2a2a2;
+    line-height: 25px;
 }
 
-.main_middle_first_main {
-    color: #fff;
-    font-size: 3.8vw;
-    margin-top: 1em;
-    padding-left: 2%;
-    padding-right:2%;
-}
+
 
 .main_middle_first_font button {
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1em;
     letter-spacing: 1px;
     max-width: 450px;
     margin: 5px;
@@ -355,11 +368,127 @@ input::-webkit-input-placeholder{
     border-color: rgb(10, 175, 241);
     color: rgb(255, 255, 255);
     margin-top: 1em;
+    width: 8em;
+    height: 3em;
+}
+.main_middle_first_font button:hover {
+    background-color: rgb(10, 175, 241);;
+}
+.swiper-slide{
+    position: relative;
+    z-index: -1;
+}
+.img_font{
+    position: absolute;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 2em 2em;
+    background: rgba(0, 0, 0, 0.45);
+    top:25%;
+    left: 5%;
+    height: 135px;
+}
+.img_font h4{
+    font-size: 1.7em;
+    color: white;
+}
+h2 h3{
+    font-family: 'Raleway', sans-serif;
+}
+.aboutus{
+    background-color: white;
+}
+.aboutus  h2{
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    color: #292929;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 3px #8a8686;
+    line-height: 1.7em;
+    margin-left: 0.6em;
+}
+.aboutus_font{
+    font-size:2.5em;
+    letter-spacing: 2px;
+    color: #292929;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 3px #8a8686;
+    line-height: 1.7em;
+    margin-left: 2.5em;
+}
+.aboutus_guanyu {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3em;
+    font-family: 'Montez', cursive;
+    color: #166bea;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 3px #8a8686;
+    margin-left: 1em;
+}
+.xuanyan{
+}
+.xuanyan button{
+     text-align: center;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    max-width: 450px;
+    margin: 5px;
+    border-radius: 2px;
+    background-color:  rgb(10, 175, 241);
+    border-color: rgb(10, 175, 241);
+    color: rgb(255, 255, 255);
+    margin-left: 1em;
+    margin-top: 1em;
     width: 10em;
     height: 3em;
 }
 
-.main_middle_first_font button:hover {
-    background-color: rgb(10, 175, 241);;
+.swiper_border{
+    height: 180px;
+    width: 85%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    border: 10px solid rgba(255, 255, 255, 0.24);
+    border-left: none;
 }
+.directions{
+    background: url("../img/gzs03.jpg") no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    padding-right: 0.5em;
+}
+#web{
+    margin: 1.3em 0;
+}
+.direction_intro{
+    font-size: 2.8em;
+    color: white;
+    line-height: 51px;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 400;
+    transform: translateY(20%)
+}
+.aiteam{
+    font-size: 3.8vw;
+    margin-top: 0.5em;
+}
+.main_middle_first ul{
+    width: 100%;
+    height: 100px;
 
+    position: absolute;
+    bottom: 10%;
+}
+.main_middle_first ul li{
+    float: left;
+}
+ul li img{
+    width: 20%;
+    height: 20%;
+}

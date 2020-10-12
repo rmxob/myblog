@@ -9,7 +9,13 @@
     <link href="{% static 'time/css/mobile.css' %}" rel="stylesheet">
     <script src={% static 'layer-v3.1.1/layer-v3.1.1/layer/layer.js' %}></script>
     <link rel="stylesheet" type="text/css" href="{% static 'time/css/user_layer.css' %}">
-    <title>VR虚拟现实</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="shortcut icon" href="{% static 'time/img/mainico2.ico' %}" type="image/x-icon">
+    <title>人工智能开发工作室</title>
     <script>
         window.onload = function () {
             var btn = document.getElementById("btn1");
@@ -18,45 +24,41 @@
                 var Class = $("#class").val();
                 var number = $("#number").val();
                 var institute = $("#institute").val();
-                var direction=$("#direction").val();
+                var direction = $("#direction").val();
                 var number1 = Number(number);
-                var list=['VR虚拟现实','web开发','人工智能算法'
+                var list = ['VR虚拟现实', 'web开发', '人工智能算法'
                 ]
                 if (!(name && Class && number && institute && direction)) {
                     layer.msg('请输入完整的信息', {time: 3000});
                 }
-                var x=false
-                for(var i=0;i<list.length;i++)
-                {
-                    if (list[i]==direction)
-                    {
-                        x=true
+                var x = false
+                for (var i = 0; i < list.length; i++) {
+                    if (list[i] == direction) {
+                        x = true
                     }
                 }
-                if(!x)
-                {
+                if (!x) {
                     layer.msg('请输入正确的方向,包括VR虚拟现实,web开发,人工智能算法', {time: 5000});
-                }
-                else{
-                     if (isNaN(number1)) {
-                    layer.msg('请输入正确的学号', {time: 3000});
                 } else {
-                    $.ajax({
-                        url: '/joinus/',
-                        type: "GET",
-                        async: false,
-                        data: {
-                            'name': name,
-                            'Class': Class,
-                            'number': number,
-                            'institute': institute,
-                            'direction':direction,
-                        },
-                        success: function (result) {
-                            layer.msg('提交成功', {time: 3000});
-                        }
-                    });
-                }
+                    if (isNaN(number1)) {
+                        layer.msg('请输入正确的学号', {time: 3000});
+                    } else {
+                        $.ajax({
+                            url: '/joinus/',
+                            type: "GET",
+                            async: false,
+                            data: {
+                                'name': name,
+                                'Class': Class,
+                                'number': number,
+                                'institute': institute,
+                                'direction': direction,
+                            },
+                            success: function (result) {
+                                layer.msg('提交成功', {time: 3000});
+                            }
+                        });
+                    }
                 }
 
             }
@@ -64,83 +66,86 @@
     </script>
 </head>
 <body>
-<a name="Back">
-    <div class="header">
-        <video muted loop="loop" autoplay="autoplay">
-            <source src="{% static 'time/虚幻.mp4' %}" type="video/mp4">
-        </video>
-        <div class="header_font">
-            <h1 style="color: aliceblue;">人工智能应用协会</h1>
-            <p>人工智能开发工作室成立于2016年9月，是一个集算法，web开发，人工智能技术为一体的工作室。这里聚集着各个学院的大佬。期待萌新的加入</p>
+<div class="header">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="img_font  animate__animated animate__fadeInDown">
+                    <h4> Welcome To </h4>
+                    <h4>人工智能应用协会</h4>
+                </div>
+                <img src="{% static 'time/img/gzn01.jpg' %}">
+                <div class="swiper_border">
+                </div>
+            </div>
+            <div class="swiper-slide"><img src="{% static 'time/img/gzn02.jpg' %}"></div>
+            <div class="swiper-slide"><img src="{% static 'time/img/gzs04.jpg' %}"></div>
         </div>
-        <div class="btn"><span>开始探索</span></div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
     </div>
-</a>
-<div class="all">
- <div class="main_middle_first" id="rgzn">
-
-        <div class="main_middle_first_img">
-
+</div>
+<div class="all" >
+    <div class="aboutus">
+            <h2>somehting</h2>
+            <h3><span class="aboutus_guanyu animate__animated animate__fadeInUp">关于我们</span></h3>
+            <h3><span class="aboutus_font">about us</span></h3>
+        <div class="xuanyan">
+            <h4 style="line-height: 35px;font-size: 25px;" class="animate__animated animate__flipInX">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                一个大家庭，一群来自五湖四海，性格迥异的人，虽然年龄，专业不尽相同，但一样的是那颗青春奋斗的心，坚持，奋斗，提升，传承的精神镌刻在每一个成员的心中，我们期待每一个志同道合的“你”的加入。
+            </h4>
+            <button>Read More</button>
         </div>
-
-        <div class="main_middle_first_font">
-
-            <p class="main_middle_first_title"><b>人工智能算法协会</b></p>
-
-            <p class="main_middle_first_main">
-
-                人工智能（Artificial
-                Intelligence），英文缩写为AI。它是研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新的技术科学。人工智能算法协会使用python的pytouch与TensorFlow库来对机器学习与深度学习进行探索</p>
-
-            <p></p>
-
-            <button>了解更多</button>
-
-        </div>
-
     </div>
- <div class="main_middle_first" id="rgzn">
-
-        <div class="main_middle_first_img">
+    <div class="directions">
+        <div class="direction_intro" class="ani" swiper-animate-effect="fadeInUp">
+            方向设置
+        </div>
+        <div class="main_middle_first" id="rgzn">
+            <div class="main_middle_first_img">
+            </div>
+            <div class="main_middle_first_font">
+                <p class="main_middle_first_title"><b class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">人工智能算法协会</b></p>
+                <p class="aiteam">AITeam</p>
+                <p class="main_middle_first_main animate__animated animate__jackInTheBox">
+                    &nbsp;&nbsp;人工智能，英文缩写为AI。它是研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新的技术科学。人工智能算法协会使用python的pytouch与TensorFlow库来对机器学习与深度学习进行探索</p>
+             <button>了解更多</button>
+            </div>
 
         </div>
-
-        <div class="main_middle_first_font">
-
-            <p class="main_middle_first_title"><b>Web开发协会</b></p>
-
-            <p class="main_middle_first_main">
-
-                人工智能（Artificial
-                Intelligence），英文缩写为AI。它是研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新的技术科学。人工智能算法协会使用python的pytouch与TensorFlow库来对机器学习与深度学习进行探索</p>
-
-            <p></p>
-
-            <button>了解更多</button>
+        <div class="main_middle_first" id="web">
+            <div class="main_middle_first_img">
+            </div>
+            <div class="main_middle_first_font">
+                <p class="main_middle_first_title"><b>Web开发协会</b></p>
+                <p class="aiteam">WebTeam</p>
+                <p class="main_middle_first_main animate__animated animate__jackInTheBox">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        作为工作室中一个高大上的部门( #)✧--网页部，
+                        在这里，有活泼可爱的学长学姐带领大家一起将一个个可爱的小代码转化为一个个高大上的网页*q(o'V、o)9*.
+                        千万不要担心自己没基础哦，学长学姐会手把手教学的(a(‘、)8))还在等什么? !
+                        快来网页部吧，给自己一次从小白到大佬的华丽转变!网页部在这里恭候各位小学弟小学妹哦~(Xo &gt;“&lt; </p>
+                <p></p>
+                   <button>了解更多</button>
+            </div>
+        </div>
+        <div class="main_middle_first" id="rgzn">
+            <div class="main_middle_first_img">
+            </div>
+            <div class="main_middle_first_font">
+                <p class="main_middle_first_title"><b>VR虚拟现实</b></p>
+                <p class="aiteam">VRTeam</p>
+                <p class="main_middle_first_main animate__animated animate__jackInTheBox">
+                     &nbsp;&nbsp;人工智能（Artificial
+                    Intelligence），英文缩写为AI。它是研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新的技术科学。人工智能算法协会使用python的pytouch与TensorFlow库来对机器学习与深度学习进行探索</p>
+                <p></p>
+                   <button>了解更多</button>
+            </div>
 
         </div>
-
-    </div> <div class="main_middle_first" id="rgzn">
-
-        <div class="main_middle_first_img">
-
-        </div>
-
-        <div class="main_middle_first_font">
-
-            <p class="main_middle_first_title"><b>VR虚拟现实</b></p>
-
-            <p class="main_middle_first_main">
-
-                人工智能（Artificial
-                Intelligence），英文缩写为AI。它是研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新的技术科学。人工智能算法协会使用python的pytouch与TensorFlow库来对机器学习与深度学习进行探索</p>
-
-            <p></p>
-
-            <button>了解更多</button>
-
-        </div>
-
     </div>
 </div>
 <div class="foot_end">
@@ -176,7 +181,35 @@
     </div>
 </div>
 </div>
-
 </body>
+<script>
+      var mySwiper = new Swiper ('.swiper-container', {
+    on:{
+      init: function(){
+        swiperAnimateCache(this); //隐藏动画元素
+        swiperAnimate(this); //初始化完成开始动画
+      },
+      slideChangeTransitionEnd: function(){
+        swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+        //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+      }
+    }
+  })
+    var mySwiper = new Swiper('.swiper-container', {
+
+        loop: true, // 循环模式选项
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        autoplay: true,
+        // 如果需要前进后退按钮
+        // 如果需要滚动条
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    })
+</script>
+
 </html>
 

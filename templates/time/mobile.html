@@ -18,6 +18,7 @@
     <title>人工智能开发工作室</title>
     <script>
         window.onload = function () {
+
             var btn = document.getElementById("btn1");
             btn.onclick = function () {
                 var name = $("#name").val();
@@ -87,17 +88,18 @@
         <div class="swiper-scrollbar"></div>
     </div>
 </div>
-<div class="all" >
+<div class="all">
     <div class="aboutus">
-            <h2>somehting</h2>
-            <h3><span class="aboutus_guanyu animate__animated animate__fadeInUp">关于我们</span></h3>
-            <h3><span class="aboutus_font">about us</span></h3>
+        <h2>somehting</h2>
+        <h3><span class="aboutus_guanyu animate__animated animate__fadeInUp">关于我们</span></h3>
+        <h3><span class="aboutus_font">about us</span></h3>
         <div class="xuanyan">
-            <h4 style="line-height: 35px;font-size: 15px; padding-left: 0.5em" class="animate__animated animate__flipInX">
+            <h4 style="line-height: 35px;font-size: 15px; padding-left: 0.5em"
+                class="animate__animated animate__flipInX">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 一个大家庭，一群来自五湖四海，性格迥异的人，虽然年龄，专业不尽相同，但一样的是那颗青春奋斗的心，坚持，奋斗，提升，传承的精神镌刻在每一个成员的心中，我们期待每一个志同道合的“你”的加入。
             </h4>
-            <button>Read More</button>
+            <button id="readmore">Read More</button>
         </div>
     </div>
     <div class="directions">
@@ -108,11 +110,13 @@
             <div class="main_middle_first_img">
             </div>
             <div class="main_middle_first_font">
-                <p class="main_middle_first_title"><b class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">人工智能算法协会</b></p>
+                <p class="main_middle_first_title"><b class="ani" swiper-animate-effect="bounceInDown"
+                                                      swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">人工智能算法协会</b>
+                </p>
                 <p class="aiteam">AITeam</p>
                 <p class="main_middle_first_main animate__animated animate__jackInTheBox">
                     &nbsp;&nbsp;人工智能，英文缩写为AI。它是研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新的技术科学。人工智能算法协会使用python的pytouch与TensorFlow库来对机器学习与深度学习进行探索</p>
-             <button>了解更多</button>
+                <button>了解更多</button>
             </div>
 
         </div>
@@ -123,13 +127,13 @@
                 <p class="main_middle_first_title"><b>Web开发协会</b></p>
                 <p class="aiteam">WebTeam</p>
                 <p class="main_middle_first_main animate__animated animate__jackInTheBox">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        作为工作室中一个高大上的部门( #)✧--网页部，
-                        在这里，有活泼可爱的学长学姐带领大家一起将一个个可爱的小代码转化为一个个高大上的网页*q(o'V、o)9*.
-                        千万不要担心自己没基础哦，学长学姐会手把手教学的(a(‘、)8))还在等什么? !
-                        快来网页部吧，给自己一次从小白到大佬的华丽转变!网页部在这里恭候各位小学弟小学妹哦~(Xo &gt;“&lt; </p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    作为工作室中一个高大上的部门( #)✧--网页部，
+                    在这里，有活泼可爱的学长学姐带领大家一起将一个个可爱的小代码转化为一个个高大上的网页*q(o'V、o)9*.
+                    千万不要担心自己没基础哦，学长学姐会手把手教学的(a(‘、)8))还在等什么? !
+                    快来网页部吧，给自己一次从小白到大佬的华丽转变!网页部在这里恭候各位小学弟小学妹哦~(Xo &gt;“&lt; </p>
                 <p></p>
-                   <button>了解更多</button>
+                <button>了解更多</button>
             </div>
         </div>
         <div class="main_middle_first" id="rgzn">
@@ -139,10 +143,10 @@
                 <p class="main_middle_first_title"><b>VR虚拟现实</b></p>
                 <p class="aiteam">VRTeam</p>
                 <p class="main_middle_first_main animate__animated animate__jackInTheBox">
-                     &nbsp;&nbsp;人工智能（Artificial
+                    &nbsp;&nbsp;人工智能（Artificial
                     Intelligence），英文缩写为AI。它是研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新的技术科学。人工智能算法协会使用python的pytouch与TensorFlow库来对机器学习与深度学习进行探索</p>
                 <p></p>
-                   <button>了解更多</button>
+                <button>了解更多</button>
             </div>
 
         </div>
@@ -183,6 +187,17 @@
 </div>
 </body>
 <script>
+    var rm = document.getElementById("readmore");
+    rm.onclick = function () {
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 0,
+            shadeClose: true,
+            skin: 'readmore',
+            content: 'asdsad'
+        });
+    }
     var mySwiper = new Swiper('.swiper-container', {
         loop: true, // 循环模式选项
         // 如果需要分页器
@@ -197,6 +212,5 @@
         },
     })
 </script>
-
 </html>
 

@@ -13,11 +13,10 @@ urlpatterns = [
     re_path('^article', views.article),
     re_path('^time$', views.time),
     re_path('^nowlogin$', views.now_login),
-    re_path('^verifycode$', views.verifycode),
+    re_path('^verifycode', views.verifycode),
     re_path('^main', views.main),
     re_path('^all$', views.main_all),
     re_path('^rgzn$', views.rjkf),
     re_path('^joinus', views.joinus),
 ]
 
-#

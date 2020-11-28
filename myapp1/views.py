@@ -31,6 +31,7 @@ from .models import *
 # 验证码
 def verifycode(request):
    from PIL import Image,ImageDraw,ImageFont
+   #from PIL.Image import point
    import  random
    bgcolor=(random.randrange(20,100),random.randrange(20,100),random.randrange(20,100))
    width=100

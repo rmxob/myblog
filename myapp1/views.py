@@ -28,11 +28,11 @@ def login(request):
     return HttpResponse("用户名或密码错误")
 import markdown
 from .models import *
+from PIL import Image,ImageDraw,ImageFont
+import random
+import static
 # 验证码
 def verifycode(request):
-   from PIL import Image,ImageDraw,ImageFont
-   #from PIL.Image import point
-   import  random
    bgcolor=(random.randrange(20,100),random.randrange(20,100),random.randrange(20,100))
    width=100
    height=50
@@ -46,7 +46,7 @@ def verifycode(request):
    rand_str=''
    for i in range(0,4):
        rand_str+=str[random.randrange(0,len(str))]
-   font=ImageFont.truetype(r'‪C:\Windows\Fonts\arial.ttf',40)
+   font=ImageFont.truetype('static/time/fonts/arial',40)
    fontcolor1=(255,random.randrange(0,255),random.randrange(0,255))
    fontcolor2 = (255, random.randrange(0, 255), random.randrange(0, 255))
    fontcolor3 = (255, random.randrange(0, 255), random.randrange(0, 255))

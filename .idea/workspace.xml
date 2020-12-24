@@ -52,7 +52,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/time/js" />
+    <property name="last_opened_file_path" value="D:/Python Video/爱鲜蜂" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -60,22 +60,22 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\myblog\myblog\static\time\js" />
-      <recent name="E:\myblog\myblog\static\time\css" />
-      <recent name="E:\myblog\myblog\static\time\img" />
-      <recent name="E:\myblog\myblog\templates\time" />
-      <recent name="E:\myblog\myblog\media" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\myblog\myblog\static\time" />
       <recent name="E:\myblog\myblog\templates" />
       <recent name="E:\myblog\myblog\templates\pubu" />
       <recent name="D:\Python视频\untitled\static\pubu\css" />
       <recent name="D:\Python视频\untitled\static\pubu\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\myblog\myblog\static\time\fonts" />
+      <recent name="E:\myblog\myblog\static\time\js" />
+      <recent name="E:\myblog\myblog\static\time\css" />
+      <recent name="E:\myblog\myblog\static\time\img" />
+      <recent name="E:\myblog\myblog\templates\time" />
     </key>
   </component>
   <component name="RunManager" selected="Django Server.untitled">
@@ -233,7 +233,12 @@
       <workItem from="1605182487776" duration="3383000" />
       <workItem from="1605187686563" duration="27000" />
       <workItem from="1605617920390" duration="789000" />
-      <workItem from="1606561281976" duration="2384000" />
+      <workItem from="1606561281976" duration="3081000" />
+      <workItem from="1606808779724" duration="1433000" />
+      <workItem from="1606917349476" duration="23000" />
+      <workItem from="1608178574615" duration="3829000" />
+      <workItem from="1608264768199" duration="1078000" />
+      <workItem from="1608273564675" duration="4234000" />
     </task>
     <servers />
   </component>
@@ -245,58 +250,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="477" y="83" key="#Test:_static.time.css/0.0.1536.824@0.0.1536.824" timestamp="1599971703574" />
-    <state x="372" y="189" key="EditFileWatcherDialog" timestamp="1597043358904">
+    <state x="548" y="154" key="FileChooserDialogImpl" timestamp="1606809002979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="189" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1597043358904" />
-    <state x="548" y="154" key="FileChooserDialogImpl" timestamp="1605185789572">
+    <state x="548" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606809002979" />
+    <state width="1493" height="182" key="GridCell.Tab.0.bottom" timestamp="1608279052759">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605185789572" />
-    <state width="1493" height="182" key="GridCell.Tab.0.bottom" timestamp="1605618722087">
+    <state width="1493" height="182" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608279052759" />
+    <state width="1493" height="182" key="GridCell.Tab.0.center" timestamp="1608279052759">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="182" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605618722087" />
-    <state width="1493" height="182" key="GridCell.Tab.0.center" timestamp="1605618722086">
+    <state width="1493" height="182" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608279052759" />
+    <state width="1493" height="182" key="GridCell.Tab.0.left" timestamp="1608279052758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="182" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605618722086" />
-    <state width="1493" height="182" key="GridCell.Tab.0.left" timestamp="1605618722086">
+    <state width="1493" height="182" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608279052758" />
+    <state width="1493" height="182" key="GridCell.Tab.0.right" timestamp="1608279052759">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="182" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605618722086" />
-    <state width="1493" height="182" key="GridCell.Tab.0.right" timestamp="1605618722087">
+    <state width="1493" height="182" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608279052759" />
+    <state x="270" y="55" key="SettingsEditor" timestamp="1608267324005">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="182" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605618722087" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1598953470569">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598953470569" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1598953470568">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1598953470568" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1598953470568">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1598953470568" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1598953470568">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1598953470568" />
-    <state x="270" y="55" key="SettingsEditor" timestamp="1600566625512">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600566625512" />
+    <state x="270" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608267324005" />
     <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1600335399200">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600335399200" />
-    <state x="377" y="0" width="782" height="824" key="find.popup" timestamp="1597560888121">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="377" y="0" width="782" height="824" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1597560888121" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1599825957306">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

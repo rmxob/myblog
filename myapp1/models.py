@@ -24,8 +24,6 @@ from django.db import models
 from mdeditor.fields import MDTextField
 
 
-
-
 class MyBlog(models.Model):
     title = models.CharField(u'标题',max_length=30)
     time=models.DateField(auto_now=True)

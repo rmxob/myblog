@@ -46,7 +46,7 @@ def verifycode(request):
    rand_str=''
    for i in range(0,4):
        rand_str+=str[random.randrange(0,len(str))]
-   font=ImageFont.truetype('static/time/fonts/arial',40)
+   font=ImageFont.truetype('static/time/fonts/arial.ttf',40)
    fontcolor1=(255,random.randrange(0,255),random.randrange(0,255))
    fontcolor2 = (255, random.randrange(0, 255), random.randrange(0, 255))
    fontcolor3 = (255, random.randrange(0, 255), random.randrange(0, 255))

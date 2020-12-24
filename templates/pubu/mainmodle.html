@@ -34,18 +34,14 @@
 
             $(window).scroll(function () {
                 var scrollt = document.documentElement.scrollTop + document.body.scrollTop;
-
                 if (scrollt > 500) {
-
                     $(".toTop").fadeIn(400);
 
                 } else {
                     $(".toTop").stop().fadeOut(400); //如果返回或者没有超过,就淡出.必须加上stop()停止之前动画,否则会出现闪动
                 }
             });
-
             $(".toTop").click(function () { //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
-
                 $("html,body").animate({scrollTop: "0px"}, 200);
             });
         });
